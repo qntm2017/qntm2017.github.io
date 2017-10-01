@@ -1,4 +1,3 @@
-
 @charset "utf-8";
 body { margin:0; padding:0; width:100%; color:#fff; font:normal 12px/1.8em Arial, Helvetica, sans-serif;}
 html, .main { padding:0; margin:0; background-color:#0056aa;}
@@ -10,7 +9,7 @@ h2 { font:bold 24px Arial, Helvetica, sans-serif; color:#fff; padding:8px 0; mar
 p { margin:8px 0; padding:0 0 8px 0; font:normal 12px/1.8em Arial, Helvetica, sans-serif;}
 a { color:#fff; text-decoration:none;}
 a:hover { text-decoration:underline;}
-.lbg { padding:4px 12px; background-color:#2475c1;}
+.lbg { padding:4px 12px; background-color:#261168;}
 
 .lbg, ul.fmenu li a:hover, ul.fmenu li.active a, .menu_nav ul li.active a, .menu_nav ul li a:hover, ul.sb_menu li a:hover, ul.ex_menu li a:hover { border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px;}
 .content_resize { border-radius:16px; -moz-border-radius:16px; -webkit-border-radius:16px;}
@@ -19,9 +18,9 @@ a:hover { text-decoration:underline;}
 .content_resize, .fbg_resize, .footer_resize { margin:0 auto; padding:0 40px; width:890px;}
 
 /* header */
-.header { background:url(images/bg.gif) repeat-x top; padding-top:10px;}
-.header_resize { margin:0 auto; padding:0; width:970px;}
-.header .logo { padding:28px 0 32px 40px; float:left; width:auto;}
+.header { background:url(images/hd.gif) repeat-x top; padding-top:10px;}
+.header_resize { margin:0 auto; padding:0; width:1070px;}
+.header .logo { padding:28px 10px 32px 40px; float:left; width:auto;}
 .header .logo p { margin:0; padding:0; line-height:1.2em;}
 .header .logo a:hover { text-decoration:none;}
 .header .htext, .header .htext h2, .header .htext a { color:#fff;}
@@ -34,13 +33,23 @@ a:hover { text-decoration:underline;}
 .menu_nav ul { list-style:none;}
 .menu_nav ul li { margin:0 0 0 12px; float:left; background:url(images/menu_bg.gif) no-repeat right center;}
 .menu_nav ul li a { display:block; margin:0; padding:4px 12px; color:#fff; text-decoration:none; font-size:14px; font-weight:normal;}
-.menu_nav ul li.active a, .menu_nav ul li a:hover { color:#fff; background-color:#2475c1;}
+.menu_nav ul li.active a, .menu_nav ul li a:hover { color:#fff; background-color:#128b9b;}
+
+
+/* w3 elements */
+
+.w3-content{max-width:980px;margin:auto}.w3-rest{overflow:hidden}
+.w3-center{text-align:center!important}
+.w3-section,.w3-code{margin-top:16px!important;margin-bottom:16px!important}
+.w3-button{border:none;display:inline-block;outline:0;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.w3-red,.w3-hover-red:hover{color:#fff!important;background-color:#f44336!important}
 
 /* content */
-.content { padding:24px 0;}
-.content_resize { padding:32px 0 24px 40px; width:930px; background-color:#1463b0; border:1px solid #3f83c0;}
-.content .mainbar { float:left; width:622px;}
-.content .mainbar img { margin:0 6px 24px; padding:4px; border:1px solid #b6cee6;}
+.content { padding:25px 0;}
+.content_resize { padding:32px 22px 24px 40px; width:930px; background-color:#0d7ba3; border:1px solid #3f83c0;}
+.content .mainbar { float:left; width:624px;}
+.content .mainbar img { margin:5px 6px 24px; padding:4px; border:1px solid #b6cee6;}
 .content .mainbar img.fl { float:left; margin-right:12px;}
 .content .mainbar .article, .content .sidebar .gadget { margin:0; padding:0 0 16px 0;}
 .content .sidebar { float:right; width:276px;}
@@ -49,7 +58,7 @@ ul.sb_menu li { padding:4px 0; width:180px;}
 ul.ex_menu li { padding:4px 0 8px;}
 ul.sb_menu li, ul.ex_menu li { margin:0;}
 ul.sb_menu li a, ul.ex_menu li a { color:#fff; text-decoration:none; font-weight:normal; margin:0 0 0 -12px; padding:4px 12px;}
-ul.sb_menu li a:hover, ul.ex_menu li a:hover { background-color:#2475c1;}
+ul.sb_menu li a:hover, ul.ex_menu li a:hover { background-color:#4024c1;}
 ul.sb_menu li a:hover { text-decoration:underline;}
 ul.ex_menu li a:hover { text-decoration:none;}
 
