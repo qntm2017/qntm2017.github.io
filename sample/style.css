@@ -20,7 +20,7 @@ a:hover { text-decoration:underline;}
 /* header */
 .header { background:url(images/bg.gif) repeat-x top; padding-top:10px;}
 .header_resize { margin:0 auto; padding:0; width:1070px;}
-.header .logo { padding:28px 10px 32px 40px; float:left; width:auto;}
+.header .logo { padding:28px 0px 32px 40px; float:left; width:auto;}
 .header .logo p { margin:0; padding:0; line-height:1.2em;}
 .header .logo a:hover { text-decoration:none;}
 .header .htext, .header .htext h2, .header .htext a { color:#fff;}
