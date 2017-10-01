@@ -18,7 +18,7 @@ a:hover { text-decoration:underline;}
 .content_resize, .fbg_resize, .footer_resize { margin:0 auto; padding:0 40px; width:890px;}
 
 /* header */
-.header { background:url(images/hd.gif) repeat-x top; padding-top:10px;}
+.header { background:url(images/bg.gif) repeat-x top; padding-top:10px;}
 .header_resize { margin:0 auto; padding:0; width:1070px;}
 .header .logo { padding:28px 10px 32px 40px; float:left; width:auto;}
 .header .logo p { margin:0; padding:0; line-height:1.2em;}
