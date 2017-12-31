@@ -146,6 +146,10 @@ h3.center {
     margin: 3% 0px;
     font-size: 30px;
 }
+.my_class_name {
+	margin: 0 auto;
+	border: 20px ridge #ddd;
+}
 .skills-w3ls {
     display: flex;
 	display: -webkit-box;
