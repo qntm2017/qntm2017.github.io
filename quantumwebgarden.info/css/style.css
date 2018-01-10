@@ -177,7 +177,7 @@ div#bs-example-navbar-collapse-1 {
 }
 .w3l_banner_info h3 {
     font-size: 4em;
-    color: rgb(102, 0, 0);
+    color: rgb(179, 0, 0);
     letter-spacing: 3px;
     text-transform: uppercase;
 }
@@ -190,7 +190,7 @@ div#bs-example-navbar-collapse-1 {
 }
  .wthree_banner_info_grid i {
     font-size: 3em;
-    color: rgb(179, 0, 0);
+    color: rgb(102, 0, 0);
     padding-bottom: 0.4em;
     margin-bottom: .4em;
     border-bottom: 1px solid rgba(255, 255, 255, 0.51);
