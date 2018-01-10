@@ -177,20 +177,20 @@ div#bs-example-navbar-collapse-1 {
 }
 .w3l_banner_info h3 {
     font-size: 4em;
-    color: #fff;
+    color: rgb(204, 102, 225);
     letter-spacing: 3px;
     text-transform: uppercase;
 }
  .w3l_banner_info p {
     font-size: 0.9em;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgb(153, 225, 51);
     letter-spacing: 2px;
     text-transform:capitalize;
     margin: 1em 0 4em;
 }
  .wthree_banner_info_grid i {
     font-size: 3em;
-    color: #9966ff;
+    color: rgb(204, 102, 225);
     padding-bottom: 0.4em;
     margin-bottom: .4em;
     border-bottom: 1px solid rgba(255, 255, 255, 0.51);
