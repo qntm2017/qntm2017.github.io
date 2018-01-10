@@ -4,6 +4,15 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+/*Sovan Wrote This Line*/
+@font-face {
+font-family: "parisienne Bold";
+src: url("css/fonts/parisienne.eot");
+src: 
+url("css/fonts/parisienne.woff") format("woff"),
+url("css/fonts/parisienne.otf") format("opentype"),
+url("css/fonts/parisienne.svg#filename") format("svg");
+}
 body{
 	padding:0;
 	margin:0;
@@ -177,7 +186,7 @@ div#bs-example-navbar-collapse-1 {
 }
 .w3l_banner_info h3 {
     font-size: 4em;
-    font-family: 'Parisienne';
+    font-family: 'parisienne', Arial, sans-serif
     color: rgb(179, 0, 0);
     letter-spacing: 3px;
     text-transform: uppercase;
