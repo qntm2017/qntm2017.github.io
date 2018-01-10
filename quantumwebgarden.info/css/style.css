@@ -177,13 +177,13 @@ div#bs-example-navbar-collapse-1 {
 }
 .w3l_banner_info h3 {
     font-size: 4em;
-    color: rgb(204, 102, 225);
+    color: rgb(102, 0, 0);
     letter-spacing: 3px;
     text-transform: uppercase;
 }
  .w3l_banner_info p {
     font-size: 0.9em;
-    color: rgb(153, 225, 51);
+    color: rgb(0, 102, 0);
     letter-spacing: 2px;
     text-transform:capitalize;
     margin: 1em 0 4em;
