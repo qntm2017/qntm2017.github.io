@@ -1,9 +1,4 @@
-﻿/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
+
 /*Sovan Wrote This Line*/
 @font-face {
 font-family: "parisienne Bold";
@@ -193,7 +188,7 @@ div#bs-example-navbar-collapse-1 {
 }
  .w3l_banner_info p {
     font-size: 0.9em;
-    color: rgb(0, 204, 0);
+    color: rgb(255, 255, 255);
     letter-spacing: 2px;
     text-transform:capitalize;
     margin: 1em 0 4em;
