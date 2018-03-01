@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ihshanu.com : Image Gallery</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+        <meta name="description" content="Responsive Image Gallery with jQuery" />
+        <meta name="keywords" content="jquery, carousel, image gallery, slider, responsive, flexible, fluid, resize, css3" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+		<noscript>
+		<style>
+		.es-carousel ul
+		{
+		display:block;
+		}
+		</style>
+		</noscript>
+		<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+			<div class="rg-image-wrapper">
+				{{if itemsCount > 1}}
+					<div class="rg-image-nav">
+						<a href="#" class="rg-image-nav-prev">Previous Image</a>
+						<a href="#" class="rg-image-nav-next">Next Image</a>
+					</div>
+				{{/if}}
+				<div class="rg-image"></div>
+				<div class="rg-loading"></div>
+				<div class="rg-caption-wrapper">
+					<div class="rg-caption" style="display:none;">
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</script>
+    </head>
+    <body>
+    
+<div style="margin-top:15px;background-color:#1abc9c;">
+		<div class="container">
+			<div class="header">
+			
+				<div class="clr"></div>
+				
+				</div><!-- header -->
+			
+			<div class="content">
+				<h1>ihshanu : : Image Gallery <span>Some of my special clicks with some others' contributions also</span></h1>
+				<div id="rg-gallery" class="rg-gallery">
+					<div class="rg-thumbs">
+						<!-- Elastislide Carousel Thumbnail Viewer -->
+						<div class="es-carousel-wrapper">
+							<div class="es-nav">
+								<span class="es-nav-prev">Previous</span>
+								<span class="es-nav-next">Next</span>
+							</div>
+							<div class="es-carousel">
+								<ul>
+									<li><a href="#"><img src="images/mnt.jpg" data-large="images/24.jpg" height="65" width="65" alt="image01" data-description="As they did battery to the spheres intend" /></a></li>
+									<li><a href="#"><img src="https://drive.google.com/uc?id=1EJCUhYMkhfMv3tWpSRXI8x68rY4d6dPb" data-large="https://drive.google.com/uc?id=1EJCUhYMkhfMv3tWpSRXI8x68rY4d6dPb" height="65" width="65" alt="image015" data-description="From off a hill whose concave womb reworded" /></a></li>
+									<li><a href="#"><img src="https://drive.google.com/uc?id=1ZIQbnRiXKzEiG44F55LW1Es_2T1WFe5W" data-large="https://drive.google.com/uc?id=1ZIQbnRiXKzEiG44F55LW1Es_2T1WFe5W" height="65" width="65" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
+									<li><a href="#"><img src="https://drive.google.com/uc?id=1FMdPAPuTSpWE8ArfeJgeT4LrYOVn9Aq2" data-large="https://drive.google.com/uc?id=1FMdPAPuTSpWE8ArfeJgeT4LrYOVn9Aq2" height="65" width="65" alt="image03" data-description="A plaintful story from a sistering vale" /></a></li>
+									<li><a href="#"><img src="https://drive.google.com/uc?id=1ZpYZAIeCr-DZu0HPgPKtPzKYQMF4rfKd" data-large="https://drive.google.com/uc?id=1ZpYZAIeCr-DZu0HPgPKtPzKYQMF4rfKd" height="65" width="65" alt="image04" data-description="My spirits to attend this double voice accorded" /></a></li>
+									<li><a href="#"><img src="https://drive.google.com/uc?id=1td5Nx4vbIh1vOX5F6q2Yeyy6zhKWCvgi" data-large="https://drive.google.com/uc?id=1td5Nx4vbIh1vOX5F6q2Yeyy6zhKWCvgi" height="65" width="65" alt="image05" data-description="And down I laid to list the sad-tuned tale" /></a></li>
+									<li><a href="#"><img src="https://drive.google.com/uc?id=167IesF9GKAabEcBGDFUWE8bKOekW3uZ5" data-large="https://drive.google.com/uc?id=167IesF9GKAabEcBGDFUWE8bKOekW3uZ5" height="65" width="65" alt="image06" data-description="Ere long espied a fickle maid full pale" /></a></li>
+									<li><a href="#"><img src="https://drive.google.com/uc?id=1aUJzg9W3sHqe6Czm0ymJN5sZTD5-gS_l" data-large="https://drive.google.com/uc?id=1aUJzg9W3sHqe6Czm0ymJN5sZTD5-gS_l" height="65" width="65" alt="image07" data-description="Tearing of papers, breaking rings a-twain" /></a></li>
+									<li><a href="#"><img src="https://drive.google.com/uc?id=1DN1F-Lb08l4zSqP1BAvfyRpFrSlx-qHT" data-large="https://drive.google.com/uc?id=1DN1F-Lb08l4zSqP1BAvfyRpFrSlx-qHT" height="65" width="65" alt="image08" data-description="Storming her world with sorrow's wind and rain" /></a></li>
+									<li><a href="#"><img src="https://drive.google.com/uc?id=1nM1x54-efuTYUFUoFh6vsDhbf1LtzCz8" data-large="https://drive.google.com/uc?id=1nM1x54-efuTYUFUoFh6vsDhbf1LtzCz8" height="65" width="65" alt="image09" data-description="Upon her head a platted hive of straw" /></a></li>
+									<li><a href="#"><img src="https://drive.google.com/uc?id=1mJalQTbAnDtvbApGyS-9vb-Flpjpfcbn" data-large="https://drive.google.com/uc?id=1mJalQTbAnDtvbApGyS-9vb-Flpjpfcbn" height="65" width="65" alt="image10" data-description="Which fortified her visage from the sun" /></a></li>
+									<li><a href="#"><img src="https://drive.google.com/uc?id=1iB0TWiahnkdACB1PIlkEv871q-_l7wuK" data-large="https://drive.google.com/uc?id=1iB0TWiahnkdACB1PIlkEv871q-_l7wuK" height="65" width="65" alt="image11" data-description="Whereon the thought might think sometime it saw" /></a></li>
+									<li><a href="#"><img src="https://drive.google.com/uc?id=1WBlSdRc80dsfGIbifa21MCTThg9WWTDQ" data-large="https://drive.google.com/uc?id=1WBlSdRc80dsfGIbifa21MCTThg9WWTDQ" height="65" width="65" alt="image12" data-description="The carcass of beauty spent and done" /></a></li>
+									<li><a href="#"><img src="https://drive.google.com/uc?id=1BEhheyNRnOo-kY7GUrbbuWwg9-uooMcL" data-large="https://drive.google.com/uc?id=1BEhheyNRnOo-kY7GUrbbuWwg9-uooMcL" height="65" width="65" alt="image13" data-description="Time had not scythed all that youth begun" /></a></li>
+																	    
+								</ul>
+							</div>
+						</div>
+						<!-- End Elastislide Carousel Thumbnail Viewer -->
+					</div><!-- rg-thumbs -->
+				</div><!-- rg-gallery -->
+				<p class="sub">Visit my main website Click <a href="http://www.ihshanu.com/" target="_blank">here</a></p>
+			</div><!-- content -->
+		</div><!-- container -->
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+		<script type="text/javascript" src="js/gallery.js"></script>
+    </div>
+    </body>
+</html>
