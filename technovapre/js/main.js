@@ -208,7 +208,7 @@ var pageElem = $('.page');
 $(document).ready(function() {
     $('#mainpage').fullpage({
 		menu: '#qmenu',
-		anchors: ['home', 'when', 'register', 'about-us', 'contact'],
+		anchors: ['home', 'when', 'register', 'about-us', 'events', 'contact'],
 //        verticalCentered: false,
 //        resize : false,
 //		responsive: 900,

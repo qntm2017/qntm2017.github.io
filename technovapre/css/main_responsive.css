@@ -1,4 +1,4 @@
-/*-----------------------------------------------------------------
+﻿/*-----------------------------------------------------------------
 [Legal Notice]
 
 Copyright (c) HighHay/Mivfx
@@ -20,6 +20,13 @@ http://themeforest.net/licenses
 		padding-right: 56px;
 	}
 }
+.page-cent .content ,
+	.page-events .content {
+		padding-left: 56px;
+		padding-right: 56px;
+	}
+}
+
 /* Screen Small than 720px */
 @media (max-width : 720px){
 	
@@ -39,6 +46,12 @@ http://themeforest.net/licenses
 		padding-left: 56px;
 		padding-right: 56px;
 	}
+.page-cent .content ,
+	.page-events .content {
+		padding-left: 56px;
+		padding-right: 56px;
+	}
+
 	.page .form label ,
 	.page .form input ,
 	.page .form button ,
