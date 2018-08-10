@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<title>Technova18 : Event Registration Window</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+ background-image: url("img/tr.png"), url("img/ckt.png") ;
+ background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    /*opacity: 0.5;*/
+}
+
+h1 {
+  text-align: center;  
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* The chck */
+.chck {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.chck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.chck:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.chck input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.chck input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.chck .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+</style>
+<body>
+  <h1><font size="25" color="yellow"> Technova18 : Annual Technical Fest </font></h1>
+  <h1><font size="25" color="#FFCCFF"> Department of Computer Science, Fakir Chand COllege </font></h1>
+  
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="technova18.docs@gmail.com" action="https://script.google.com/macros/s/AKfycbzQKJo4VlhR2UGVWQI7Gyo274gkXEckFivXOFSB4eO3OA3Ad5Z8/exec" style="background-color: rgba(36, 193, 214,0.7);
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;">
+
+
+  <p><center><font size="25" color="white">Event Registration Window</font></center></p>
+  <div class="form-elements">
+
+		<br><br>
+
+  <center><b>Personal Details</b></center><br>
+  
+  <fieldset style="border-color: rgb(229, 22, 141);">
+  <legend><b>Name:</b></legend>
+  <p><i>Name of 1st Participant : </i></p><p><input type="text" required="true" placeholder="Enter Full Name" oninput="this.className = ''" name="fname" id="fname"></p>
+  <p><i>Name of 2nd Participant : </i></p><p><input type="text" placeholder="Enter Full Name" oninput="this.className = ''" name="sname"></p>
+  </fieldset> <br>
+   
+  <fieldset style="border-color: rgb(229, 22, 141);">
+  <legend><b>Email ID:</b></legend>
+  <p><i>Email ID of 1st Participant : </i></p><p><input type="email" required="true" placeholder="EnterEmail ID" oninput="this.className = ''" name="fmail"></p>
+  <p><i>Email ID of 2nd Participant : </i></p><p><input type="email" placeholder="Enter Email ID" oninput="this.className = ''" name="smail"></p>
+  </fieldset> <br>
+  
+  <fieldset style="border-color: rgb(229, 22, 141);">
+  <legend><b>Phone No.:</b></legend>
+  <p><i>Phone No. of 1st Participant : </i></p><p><input type="number" required="true" placeholder="Enter Phone No." oninput="this.className = ''" name="fph"></p>
+  <p><i>Phone No. of 2nd Participant : </i></p><p><input type="number" placeholder="Enter Phone No." oninput="this.className = ''" name="sph"></p>
+  </fieldset> <br>
+  
+  <center><b>Academic Details</b></center><br>
+  
+  <fieldset style="border-color: rgb(77, 22, 229);">
+  <legend><b>Stream :</b></legend>
+  <p><i>Stream of Study of 1st Participant : </i></p><p><input type="text" required="true" placeholder="Enter Stream, eg: B.SC,B.Tech,B.C.A.,B.VOC,M.Sc,M.Tech,M.C.A." oninput="this.className = ''" name="fstrm"></p>
+  <p><i>Stream of Study of 2nd Participant : </i></p><p><input type="text" placeholder="Enter Stream, eg: B.SC,B.Tech,B.C.A.,B.VOC,M.Sc,M.Tech,M.C.A." oninput="this.className = ''" name="sstrm"></p>
+  </fieldset> <br>
+  
+  <fieldset style="border-color: rgb(77, 22, 229);">
+  <legend><b>Year / Semester :</b></legend>
+  <p><i>year or Semester of 1st Participant : </i></p><p><input type="text" required="true" placeholder="Enter Year/Semester, eg: 1st Yr,1st SEM..." oninput="this.className = ''" name="fyr"></p>
+  <p><i>year or Semester of 2nd Participant : </i></p><p><input type="text" placeholder="Enter Year/Semester, eg: 1st Yr,1st SEM..." oninput="this.className = ''" name="syr"></p>
+  </fieldset> <br>
+  
+  <fieldset style="border-color: rgb(77, 22, 229);">
+  <legend><b>College Name :</b></legend>
+  <p><i>College Name 1st Participant : </i></p><p><input type="text" required="true" placeholder="Enter College Name" oninput="this.className = ''" name="fclg"></p>
+  <p><i>College Name 2nd Participant : </i></p><p><input type="text" placeholder="Enter College Name" oninput="this.className = ''" name="sclg"></p>
+  </fieldset> <br>
+  
+  <center><b>Participation Details</b></center><br>
+  
+  <fieldset style="border-color: rgb(4, 104, 40);">
+  <legend><b>Event to Participate (Group Participation) :</b></legend>
+  
+  <p><i>Select Events for your Group: </i></p>
+  <p><i>Event 1 (Select from the List): </i></p>
+  	<p>
+    <select name="fevent" required="true" style="padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
+    <option value="Web Design" selected >Design the Globe</option>
+    <option value="Digikit">Digikit</option>
+  	</select>
+    </p>
+  <p><i>Event 2 (Check to participate): </i></p>
+  	<label class="chck">We want to join Code-Battle<input type="checkbox" name="sevent" value="Code-Battle"><span class="checkmark"></span></label>
+  </fieldset><br>
+  
+  <fieldset style="border-color: rgb(4, 104, 40);">
+  <legend><b>Event to Participate (Individual Participation):</b></legend>
+    
+    <p><i>For 1st participant:</i></p>
+    <p>    
+    <label class="chck">I want to Join Battle of Word<input type="checkbox" name="debate" value="fp"><span class="checkmark" onclick="chk()"></span></label>
+    </p>
+    <p><i>For 2nd participant:</i></p>
+    <p>
+    <label class="chck">I want to Join Battle of Word<input type="checkbox" name="debate" value="sp"><span class="checkmark"></span></label>
+    </p>
+
+  </fieldset> <br>
+
+  <center><b>Preferred Foodservice</b></center><br>
+
+  <fieldset style="border-color: rgb(117, 62, 7);">
+  <legend><b>Food Chioce:</b></legend>
+  
+  <p><i>For 1st participant: </i></p>
+    <p>
+    <select name="ffood" required="true" style="padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
+    <option value="NULL" disabled="disabled" selected>-- Select --</option>
+    <option value="non-veg">Non-Veg</option>
+    <option value="veg">Veg</option>
+  	</select>
+    </p>
+
+  <p><i>For 2nd participant: </i></p> 
+    <p>
+    <select name="sfood" style="padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
+    <option value="NULL" disabled="disabled" selected>-- Select --</option>
+    <option value="non-veg">Non-Veg</option>
+    <option value="veg">Veg</option>
+  	</select>    
+    </p>
+  </fieldset> <br>
+
+	<p><center><i>Event Participants are requested not to fill up Seminar Form. They are automatically taken as
+    entry for the Seminar. Seminar is about the topic </i><u><strong>"Cryptography"</strong></u><i> by </i><u><strong>Dr. Mridul Nandi, ISI Kolkata</strong></u>
+    </center></p>
+   
+	<center><input type="submit" value="Submit" style="padding: 10px; width: 40%; font-style:oblique; font-size: 17px; font-family: Times New Roman; border: 1px solid #aaaaaa;" onclick="getdetails()">
+    </center>
+    </div>   
+ 
+<div class="thankyou_message" style="display:none;">
+
+      <h1>Thanks for registering with Technova18.<br>
+        We will get back to you soon.</h1>
+
+<div id="placeHolder"></div>
+      
+	</div>
+                
+	</form>
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="js/main.js"></script>
+<!-- END -->
+
+
+<script>
+function chk()
+{
+
+
+
+}
+
+</script>
+
+<script type="text/javascript" src="qr/qrcode.js"></script>
+
+</body>
+</html>

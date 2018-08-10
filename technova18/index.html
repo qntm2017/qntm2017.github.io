@@ -1,0 +1,1201 @@
+<!doctype html>
+<!--
+COPYRIGHT by HighHay/Mivfx
+Before using this theme, you should accept themeforest licenses terms.
+http://themeforest.net/licenses
+-->
+
+<html class="no-js" lang="en">
+    
+<!-- Mirrored from demo.highhay.com/bientot/index-video.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Aug 2018 19:00:51 GMT -->
+<!-- Added by HTTrack --><!-- /Added by HTTrack -->
+<head>
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123753944-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123753944-1');
+</script>
+
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+
+        <!-- Page Title Here -->
+        <title>Technova18 :: Annual Departmental Technical Fest of 
+        		Department of Computer Science, Fakir Chand College</title>
+		
+        <!-- Page Description Here -->
+		<meta name="description" content="A responsive coming soon template, un template HTML pour une page en cours de construction">
+
+        <!-- Disable screen scaling
+                <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
+ 
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+        
+        <!-- Initializer -->
+        <link rel="stylesheet" href="css/normalize.css">        
+        
+        <!-- Web fonts and Web Icons -->
+        <link rel="stylesheet" href="css/pageloader.css">
+        <link rel="stylesheet" href="fonts/opensans/stylesheet.css">
+        <link rel="stylesheet" href="fonts/asap/stylesheet.css">
+        <link rel="stylesheet" href="css/ionicons.min.css">
+        
+        <!-- Vendor CSS style -->
+        <link rel="stylesheet" href="css/foundation.min.css">
+        <link rel="stylesheet" href="js/vendor/jquery.fullPage.css">
+        <link rel="stylesheet" href="js/vegas/vegas.min.css">
+        
+		<!-- Main CSS files -->
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="css/main_responsive.css">
+        <link rel="stylesheet" href="css/style-font1.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+ 
+ 
+ <style>
+.timeclr {
+	color:black;
+}
+.timeline {
+  position: relative;
+  width: 660px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 1em 0;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.timeline:before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: ' ';
+  display: block;
+  width: 6px;
+  height: 100%;
+  margin-left: -3px;
+  background: rgb(80,80,80);
+  background: -moz-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
+  background: -webkit-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  
+  z-index: 5;
+}
+
+.timeline li {
+  padding: 1em 0;
+}
+
+.timeline li:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.direction-l {
+  position: relative;
+  width: 300px;
+  float: left;
+  text-align: right;
+}
+
+.direction-r {
+  position: relative;
+  width: 300px;
+  float: right;
+}
+
+.flag-wrapper {
+  position: relative;
+  display: inline-block;
+  
+  text-align: center;
+}
+
+.flag {
+  position: relative;
+  display: inline;
+  background:rgba(32,153,26,0.7);
+  padding: 6px 10px;
+  border-radius: 5px;
+  
+  font-weight: 600;
+  text-align: left;
+}
+
+.direction-l .flag {
+  -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+}
+
+.direction-r .flag {
+  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+}
+
+.direction-l .flag:before,
+.direction-r .flag:before {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  content: ' ';
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-top: -10px;
+  background: #fff;
+  border-radius: 10px;
+  border: 4px solid rgb(255,80,80);
+  z-index: 10;
+}
+
+.direction-r .flag:before {
+  left: -40px;
+}
+
+.direction-l .flag:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -8px;
+  border: solid transparent;
+  border-left-color: rgb(248,248,248);
+  border-width: 8px;
+  pointer-events: none;
+}
+
+.direction-r .flag:after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -8px;
+  border: solid transparent;
+  border-right-color: rgb(248,248,248);
+  border-width: 8px;
+  pointer-events: none;
+}
+
+.time-wrapper {
+  display: inline;
+  
+  line-height: 1em;
+  font-size: 0.66666em;
+  color: rgb(250,80,80);
+  vertical-align: middle;
+}
+
+.direction-l .time-wrapper {
+  float: left;
+}
+
+.direction-r .time-wrapper {
+  float: right;
+}
+
+.time {
+  display: inline-block;
+  padding: 4px 6px;
+  background: rgba(32, 175, 188,0.5);
+}
+
+.desc {
+  margin: 1em 0.75em 0 0;
+  
+  font-size: 0.77777em;
+  font-style: italic;
+  line-height: 1.5em;
+  border-style:ridge;
+  text-align:center;
+}
+
+.direction-r .desc {
+  margin: 1em 0 0 0.75em;
+}
+.fieldset { 
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+    background-color: rgba(229, 20, 20,0.5);
+
+ 
+}
+
+/* ================ Timeline Media Queries ================ */
+
+@media screen and (max-width: 660px) {
+.timeclr {
+	color:black;
+}
+.fieldset { 
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+    background-color: rgba(229, 20, 20,0.5);
+}
+.timeline {
+ 	width: 100%;
+	padding: 4em 0 1em 0;
+	font-weight:bold;
+}
+
+.timeline li {
+	padding: 2em 0;
+}
+
+.direction-l,
+.direction-r {
+	float: none;
+	width: 100%;
+
+	text-align: center;
+}
+.time {
+  background: rgba(32, 175, 188,0.5);
+}
+
+
+.flag-wrapper {
+	text-align: center;
+}
+
+.flag {
+	background:rgba(32,153,26,0.7);
+	z-index: 15;
+}
+
+.direction-l .flag:before,
+.direction-r .flag:before {
+  position: absolute;
+  top: -30px;
+	left: 50%;
+	content: ' ';
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin-left: -9px;
+	background: #fff;
+	border-radius: 10px;
+	border: 4px solid rgb(255,80,80);
+	z-index: 10;
+}
+
+.direction-l .flag:after,
+.direction-r .flag:after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: -8px;
+	height: 0;
+	width: 0;
+	margin-left: -8px;
+	border: solid transparent;
+	border-bottom-color: rgb(255,255,255);
+	border-width: 8px;
+	pointer-events: none;
+}
+
+.time-wrapper {
+	display: block;
+	position: relative;
+	margin: 4px 0 0 0;
+	z-index: 14;
+}
+
+.direction-l .time-wrapper {
+	float: none;
+}
+
+.direction-r .time-wrapper {
+	float: none;
+}
+
+.desc {
+	position: relative;
+	margin: 1em 0 0 0;
+	padding: 1em;
+ 	background-color: rgba(229, 20, 20,0.5);
+	-webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+	-moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+	box-shadow: 0 0 1px rgba(0,0,0,0.20);
+	
+  z-index: 15;
+}
+
+.direction-l .desc,
+.direction-r .desc {
+	position: relative;
+	margin: 1em 1em 0 1em;
+	padding: 1em;
+	
+  z-index: 15;
+}
+
+}
+
+@media screen and (min-width: 400px ?? max-width: 660px) {
+
+.direction-l .desc,
+.direction-r .desc {
+	margin: 1em 4em 0 4em;
+}
+
+}
+
+
+</style>
+        
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+    </head>
+    <body id="menu" class="alt-bg">
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <!-- Page Loader -->
+        <div class="page-loader" id="page-loader">
+            <div>
+            <img src="img/load.gif">
+            </div>
+        </div> 
+    
+        <!-- BEGIN OF site header Menu -->
+		<!-- Add "material" class for a material design style -->
+		<header class="header-top">
+<!--		<header class="header-top material">-->
+			<div class="logo">
+				<a href="#home">
+					<img src="img/logo_large.png" alt="Logo Brand">
+				</a>
+			</div>
+            <div class="menu clearfix">
+                <a href="#about-us">About</a>
+                <a href="#events">Events</a>
+				<a href="#ourteam">Our Team</a>
+				<!-- Add other menu similar to "about" here -->
+                <a href="#contact">contact</a>
+            </div>
+		</header>
+        <!-- END OF site header Menu-->
+        
+        <!-- BEGIN OF Quick nav icons at left -->
+		<nav class="quick-link count-6 nav-left">
+			<ul id="qmenu">
+				<li data-menuanchor="home">
+					<a href="#home" class=""><i class="icon ion ion-home"></i>
+					</a>
+					<span class="title">Technova18</span>
+				</li>
+				<li data-menuanchor="when">
+					<a href="#when" class=""><i class="icon ion ion-android-alarm"></i>
+					</a>
+					<span class="title">When</span>
+				</li>
+				<li data-menuanchor="register">
+					<a href="#register"><i class="icon ion ion-compose"></i>
+					</a>
+					<span class="title">Register</span>
+				</li>
+				<li data-menuanchor="about-us">
+					<a href="#about-us"><i class="icon ion ion-android-information"></i>
+					</a>
+					<span class="title">About Us</span>
+				</li>
+				<li data-menuanchor="events">
+					<a href="#events"><i class="icon ion ion-arrow-right-b"></i>
+					</a>
+					<span class="title">Event Timings</span>
+				</li>
+				<li data-menuanchor="ourteam">
+					<a href="#ourteam" class=""><i class="icon ion ion-ios7-people"></i>
+					</a>
+					<span class="title">Our Team</span>
+				</li>
+
+				<li data-menuanchor="contact">
+					<a href="#contact"><i class="icon ion ion-android-call"></i>
+					</a>
+					<span class="title">Contact</span>
+				</li>
+				<li data-menuanchor="contact">
+					<a href="mailto://technova18.docs@gmail.com"><i class="icon ion ion-email"></i>
+					</a>
+					<span class="title">Write to us</span>
+				</li>
+			</ul>
+		</nav>
+        <!-- END OF Quick nav icons at left -->
+        
+
+
+        <!-- BEGIN OF site cover -->
+        <div class="page-cover" id="home">
+            <!-- Cover Background -->
+            <div class="cover-bg pos-abs full-size bg-img" data-image-src="img/bg-default.jpg"></div>
+			
+            <!-- BEGIN OF Slideshow Background -->
+            <!--<div class="cover-bg pos-abs full-size slide-show">
+				<i class='img' data-src='./img/bg-slide1.jpg'></i>
+				<i class='img' data-src='./img/bg-slide2.jpg'></i>
+				<i class='img' data-src='./img/bg-slide3.jpg'></i>
+				<i class='img' data-src='./img/bg-slide4.jpg'></i>
+			</div>-->
+            <!-- END OF Slideshow Background -->
+            
+            <!--BEGIN OF Static video bg  - uncomment below to use Video as Background-->
+            <div id="container" class="video-container show-for-medium-up">
+                <video autoplay="autoplay" loop="loop"  muted="muted"
+                       width="640" height="360">
+                    <source src="vid/back.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!--END OF Static video bg-->
+			
+			<!-- Solid color as background -->
+<!--            <div class="cover-bg-mask pos-abs full-size bg-color" data-bgcolor="rgba(62, 24, 219, 0.41)"></div>-->
+			<!-- Solid color as filter -->
+            <div class="cover-bg-mask pos-abs full-size bg-color" data-bgcolor="rgba(90, 161, 226, 0.45)"></div>
+<!--            <div class="cover-bg-mask pos-abs full-size bg-color" data-bgcolor="rgba(235, 25, 219, 0.41)"></div>-->
+            
+        </div>
+        <!--END OF site Cover -->
+        
+        <!-- BEGIN OF site main content content here -->
+        <main class="page-main" id="mainpage">             
+            
+			<!-- Begin of home page -->
+			<div class="section page-home page page-cent" id="s-home">
+				<!-- Logo -->
+				<div class="logo-container">
+					<img class="h-logo" src="img/logo_only.png" alt="Logo">
+				</div>
+				<!-- Content -->
+				<section class="content">
+					
+					<header class="header">
+						<div class="h-left">
+							<h2>Technova <strong>2018</strong></h2>
+						</div>
+						<div class="h-right">
+							<h3>Department of<br>Computer Science</h3>
+							<h4 class="subhead"><a href="http://fakirchandcollege.org/" target="_blank">Fakir Chand College</a></h4>
+						</div>
+					</header>
+				</section>
+				
+				<!-- Scroll down button -->
+                <footer class="p-footer p-scrolldown">
+                    <a href="#when">
+                        <div class="arrow-d">
+							<div class="before">Tell&nbsp;me</div>
+							<div class="after">When</div>
+							<div class="circle"></div>
+						</div>
+                    </a>                        
+                </footer>
+			</div>
+			<!-- End of home page -->
+            
+            <!-- Begin of timer page -->
+            <div class="section page-when page page-cent" id="s-when">
+                <section class="content">
+                    <div class="clock clock-countdown">
+						<div class="site-config"
+							 data-date="09/22/2018 09:15:00" 
+							 data-date-timezone="+5.5"
+							 ></div>
+						<header class="header">
+							Coming <strong>soon</strong>
+						</header>
+                        <div class="elem-left">
+                            <div class="digit hours">00</div>
+                            <div class="text">hrs</div>
+                        </div>						
+                        <div class="elem-center">
+							<!-- Optional text at top or image logo -->
+							<!--<span class="text top">here in</span>-->
+							<!-- Optional logo at top -->
+							<span class="text top"><img class="img" alt="Logo" src="img/logo_large.png"></span>
+                            <div class="digit days">000</div>
+                            <div class="text">days</div>
+                        </div>
+                        <div class=" elem-right">
+                            <div class="digit minutes">00</div>
+                            <div class="text">min</div>
+                        </div>
+						
+						<!-- second knob here -->
+						<div class="second">
+							<input class="knob container" 
+								   id="second-knob"
+								  	data-width="400"
+								  	data-height="400"
+								 data-displayInput=false
+									data-fgColor="#fff"
+									data-bgColor="rgba(255,255,255,0)"
+									data-thickness=".07"
+								 	value="0"
+									data-displayPrevious=true
+								   data-max="6000"
+								   />
+						</div>
+                    </div>                   
+                    
+                </section>                
+                <footer class="p-footer p-scrolldown">
+                    <a href="#register">
+                        <div class="arrow-d">
+							<div class="before">Register</div>
+							<div class="after">Now</div>
+							<div class="circle"></div>
+						</div>
+                    </a>                        
+                </footer>
+            </div>
+            <!-- End of timer page -->
+            
+            <!-- Begin of register page -->
+            <div class="section page-events page page-cent" id="">
+                <section class="content">
+                    <header class="p-title">
+                        <h3>Register <i class="ion ion-compose"></i></h3> 
+                    </header>
+                   <div class="row">
+					<div class="medium-6 columns left" style="padding-left:3rem;padding-right:3rem;float:left">
+						<h2 style="color:#FFFFFF;font-family:'Lucida Handwriting'"><center>For Technical Events</center></h2>
+                  
+                    	<p class="invite center">Registration Portal for <a href="#events"><strong>Technical Events.</strong></a> is ready for your group.
+                    	Any group should contain atmost 2 person, may be from different college or even different stream or different year of study.
+                        Click the link below to open technical event registration form. This link is available till 21st September 12:00AM. Hurry Up!</p>
+                        <center><a href="#" class="button round">Technical Event Registration</a></center>
+                   
+                   <div class="fields clearfix" style="display:none">
+								<div class="input">
+									<label for="reg-email">Email </label>
+									<input id="reg-email" class="email_f"  name="email" type="email" required placeholder="your@email.address" data-validation-type="email"></div>
+								<div class="buttons">
+									<button id="submit-email" class="button email_b" name="submit_email">Ok</button>
+								</div>
+							</div>
+                            
+                            <p class="email-ok invisible"><strong>Thank you</strong> for your subscription. We will inform you.</p>
+                        
+                   
+                    </div>
+                    
+                    <div class="medium-6 columns left" style="padding-left:3rem;padding-right:3rem;float:left">
+                    <div>
+                        
+                          <h2 style="color:#FFFFFF;font-family:'Lucida Handwriting'"><center>For Seminar</center></h2> 
+						 <p class="invite center">Registration Portal for <strong>Seminar</strong> is ready for you.
+                    	Any individual can register for the seminar. Seminar is about the topic : <b>"Cryptography"</b>, by <b><i>Dr. Mridul Nandi</i></b> from
+                    	<b><i>ISI Kolkata.</i></b>
+                        Click the link below to open seminar registration form. This link is available till 21st September 12:00AM. Hurry Up!</p>
+							<center><a href="#" class="button round">Seminar Registration</a></center>
+							<div class="fields clearfix" style="display:none">
+								<div class="input">
+									<label for="reg-email">Email </label>
+									<input id="reg-email" class="email_f"  name="email" type="email" required placeholder="your@email.address" data-validation-type="email"></div>
+								<div class="buttons">
+									<button id="submit-email" class="button email_b" name="submit_email">Ok</button>
+								</div>
+							</div>
+                            
+                            <p class="email-ok invisible"><strong>Thank you</strong> for your subscription. We will inform you.</p>
+                        
+                    </div>
+				</div>
+				</div> 
+				
+								
+				
+				
+                </section>
+                <footer class="p-footer p-scrolldown">
+                    <a href="#about-us">
+                        <div class="arrow-d">
+							<div class="before">About</div>
+							<div class="after">Us!</div>
+							<div class="circle"></div>
+						</div>
+                    </a>                        
+                </footer>
+            </div>
+            <!-- End of register page -->
+            
+            <!-- Begin of about us page -->
+            <div class="section page-register page page-cent" id="s-about-us">
+                <section class="content">
+                    <header class="p-title">
+                        <h3>About Us<i class="ion ion-android-information">
+                            </i>
+                        </h3>
+						<h4>Department of <span class="bold">Compuer Science,</span> 
+						Fakir Chand College </h4>
+                    </header>
+                    <article class="text">
+                        <p>We are going to organise our Departmental Technical Fest <strong>"Technova18" </strong>
+                        on 22nd September, 2018. Students with
+                         Computer Science and IT interest are requested to join us in inter college events,
+                         Technology Quiz Contest "Mindbend", and Seminar.<a href="#register"><strong> Registration portal </strong></a>is available now. Hurry up for
+                         your seat. </p>
+                         <p>
+                         <b>Technical Events:</b> <li style="font-weight:bolder;"><a href="events/globe.html"> Design The Globe </a></li>
+                          <li style="font-weight:bolder;"><a href="events/digikit.html"> Digikit </a></li>
+                          <li style="font-weight:bolder;"><a href="events/code.html"> Code-Battle </a></li> 
+                         <li style="font-weight:bolder;"> <a href="events/debate.html">Group Debate </a></li>
+                         </p>
+                         <p>
+                         <b>Quiz Contest:</b> <li style="font-weight:bolder;"><a href="events/mindbend.html"> MINDBEND </a></li>
+                         </p>
+                         <p>
+                         <b>Seminar:</b> <li> Topic: <i>Cryptography</i> </li> 
+                         <li> Resource Person: <i>Dr. Mridul Nandi, ISI Kolkata</i> </li>
+                         <a href="events/seminar.html" style="font-weight:bolder;">Click for more details about seminar.</a>
+                         </p>
+						                         
+      				</article>
+                </section>
+                <footer class="p-footer p-scrolldown">
+                    <a href="#events">
+                        <div class="arrow-d">
+							<div class="before">Our</div>
+							<div class="after">Events</div>
+							<div class="circle"></div>
+						</div>
+                    </a>                        
+                </footer>
+            </div>
+            <!-- End of about us page -->
+            
+            
+            <!-- Begin of Events page -->
+            <div class="section page-events page page-cent" id="s-events">
+                <section class="content">
+                   <header class="p-title">
+                        <h3>Event Timings<i class="ion ion-arrow-right-b">
+                            </i>
+                        </h3>
+                    </header> 
+                  <ul class="timeline">
+
+	<!-- Item 1 -->
+	<li>
+		<div class="direction-l">
+			<div class="flag-wrapper">
+				<span class="flag">Registration Validation</span>
+				<span class="time-wrapper"><span class="time timeclr">From 9:30 AM</span></span>
+			</div>
+			<div class="desc fieldset">Every participant for Technical Events and Seminar both, must have to validate
+			their registration visiting our registration section on the event day.</div>
+		</div>
+	</li>
+	<li>
+		<div class="direction-r">
+			<div class="flag-wrapper">
+				<span class="flag">Design the Globe</span>
+				<span class="time-wrapper"><span class="time timeclr">10:30 AM - 11:30 AM</span></span>
+			</div>
+			<div class="desc fieldset">It is named for Web Design based on HTML and PHP. For more details visit 
+			<a href="#">here</a></div>
+		</div>
+	</li>
+  
+	<!-- Item 2 -->
+	<li>
+		<div class="direction-l">
+			<div class="flag-wrapper">
+				<span class="flag">Digikit</span>
+				<span class="time-wrapper"><span class="time timeclr">10:30 AM - 11:30 AM</span></span>
+			</div>
+			<div class="desc fieldset">This event consist of designing Digital Circuits with IC andother electronics equipments.
+			For more details visit <a href="#">here</a></div>
+		</div>
+	</li>
+
+  <li>
+		<div class="direction-r">
+			<div class="flag-wrapper">
+				<span class="flag">Code-Battle</span>
+				<span class="time-wrapper"><span class="time timeclr">11:30 AM - 12:30 AM</span></span>
+			</div>
+			<div class="desc fieldset">This is the codename Coding contest Event. For more details visit <a href="#">here</a></div>
+		</div>
+	</li>
+  
+	<!-- Item 2 -->
+	<li>
+		<div class="direction-l">
+			<div class="flag-wrapper">
+				<span class="flag">Battle of Word</span>
+				<span class="time-wrapper"><span class="time timeclr">11:00 AM - 12:00PM</span></span>
+			</div>
+			<div class="desc fieldset">This event is another name of Group Debate Contest. This event is open to all.
+			For more details visit <a href="#">here</a></div>
+		</div>
+	</li>
+  
+	<!-- Item 3 -->
+	<li>
+		<div class="direction-r">
+			<div class="flag-wrapper">
+				<span class="flag">Mindbend</span>
+				<span class="time-wrapper"><span class="time timeclr">1:15 PM - 2:30 PM</span></span>
+			</div>
+			<div class="desc fieldset">Our best Event "Mindbend" is the name of Technical Quiz Contest.
+			For more details visit <a href="#">here</a></div>
+		</div>
+	</li>
+	
+	<li>
+		<div class="direction-l">
+			<div class="flag-wrapper">
+				<span class="flag">Seminar</span>
+				<span class="time-wrapper"><span class="time timeclr">2:30 PM - 4:00 PM</span></span>
+			</div>
+			<div class="desc fieldset">Our Seminar will be about the topic: "Cryptography" by Dr. Mridul Nandi from ISI Kolkata.
+			For more details visit <a href="#">here</a></div>
+		</div>
+	</li>
+	
+	
+	<li>
+		<div class="direction-r">
+			<div class="flag-wrapper">
+				<span class="flag">Prize Distribution</span>
+				<span class="time-wrapper"><span class="time timeclr">4:00 PM - 4:15 PM</span></span>
+			</div>
+			<div class="desc fieldset">Prize Distributation Ceremony for students secured rank in Technical Events.</div>
+		</div>
+	</li>
+	<li>
+		<div class="direction-l">
+			<div class="flag-wrapper">
+				<span class="flag">Closing Ceremony</span>
+				<span class="time-wrapper"><span class="time timeclr">Nearly at 4:15 PM</span></span>
+			</div>
+			<div class="desc fieldset">After Prize Distribution, all participants will be given certificates from our certificate centre of "Technova18"
+			Don't Forget to collect your Certificate.</div>
+		</div>
+	</li>
+
+	
+  
+</ul>
+
+                </section>
+                <footer class="p-footer p-scrolldown">
+                    <a href="#ourteam">
+                        <div class="arrow-d">
+							<div class="before">Our</div>
+							<div class="after">Team</div>
+							<div class="circle"></div>
+						</div>
+                    </a>                        
+                </footer>
+            </div>
+            <!-- End of Events page -->
+			<!--Begin of Our Team Page -->
+        <div class="section team-info page page-cent" id="s-ourteam">
+            <section class="content">
+                    <header class="p-title">
+                        <h3>Our Team<i class="ion ion-arrow-right-b">
+                            </i>
+                        </h3>
+                    </header>
+                    
+                   
+                <center>    
+       <div class="row">
+			<div class="medium-2.5 columns left">
+                <div class="team-image">
+                <center>
+                    <img src="img/img-1.jpg">
+                    <div class="team-info">
+                <strong>CONVENER</strong>
+                    <h3 class="title">Ammar Hossain Laskar</h3>
+                    <p class="description">
+                        M.Sc, 2nd Year, Computer Science
+                    </p>
+                </div>
+                    </center>
+                    <center>
+                   <div class="socialnet">
+						<a href="tel:8768626927"><i class="ion ion-android-call"></i></a>
+						<a href="mailto:qntmupld@gmail.com"><i class="ion ion-email"></i></a>					
+				  </div>
+				  </center>
+                </div>
+                
+           </div>
+           
+           <center>
+ 		   <div class="medium-4 columns left">
+                <div class="team-image">
+                    <img src="img/img-2.jpg">
+                    <div class="team-info">
+                <strong>Technical Expert</strong>
+                    <h3 class="title">Sovan Mondal</h3>
+                    <p class="description">
+                        B.Sc(H), 3rd Year, Computer Science
+                    </p>
+                    <div class="socialnet">
+						<a href="tel:8768626927"><i class="ion ion-android-call"></i></a>
+						<a href="mailto:qntmupld@gmail.com"><i class="ion ion-email"></i></a>
+					</div>
+                </div>
+                </div>
+                </div>
+            </center>
+            
+            <center>
+ 		   <div class="medium-4 columns left">
+                <div class="team-image">
+                    <img src="img/img-2.jpg">
+                    <div class="team-info">
+                <strong>Technical Expert</strong>
+                    <h3 class="title">Suman Pramanik</h3>
+                    <p class="description">
+                        B.Sc(H), 3rd Year, Computer Science
+                    </p>
+                    <div class="socialnet">
+						<a href="tel:8768626927"><i class="ion ion-android-call"></i></a>
+						<a href="mailto:qntmupld@gmail.com"><i class="ion ion-email"></i></a>
+					</div>
+                </div>
+                </div>
+                </div>
+            </center>
+            
+            
+            <center>
+ 		   <div class="medium-4 columns left">
+                <div class="team-image">
+                    <img src="img/img-2.jpg">
+                    <div class="team-info">
+                <strong>Event Executive Director</strong>
+                    <h3 class="title">Anwesha Naskar</h3>
+                    <p class="description">
+                        B.Sc(H), 3rd Year, Computer Science
+                    </p>
+                    <div class="socialnet">
+						<a href="tel:8768626927"><i class="ion ion-android-call"></i></a>
+						<a href="mailto:qntmupld@gmail.com"><i class="ion ion-email"></i></a>
+					</div>
+                </div>
+                </div>
+                </div>
+            </center>
+            
+
+
+
+			<center>
+ 		   <div class="medium-4 columns left">
+                <div class="team-image">
+                    <img src="img/img-2.jpg">
+                    <div class="team-info">
+                <strong>Finance Manager</strong>
+                    <h3 class="title">Dipashree Mondal</h3>
+                    <p class="description">
+                        B.Sc(H), 2nd Year, Computer Science
+                    </p>
+                    <div class="socialnet">
+						<a href="tel:8768626927"><i class="ion ion-android-call"></i></a>
+						<a href="mailto:qntmupld@gmail.com"><i class="ion ion-email"></i></a>
+					</div>
+                </div>
+                </div>
+                </div>
+            </center>
+            
+			
+
+			<center>
+ 		   <div class="medium-4 columns left">
+                <div class="team-image">
+                    <img src="img/img-2.jpg">
+                    <div class="team-info">
+                <strong>Event Executive Member</strong>
+                    <h3 class="title">Bikash Das</h3>
+                    <p class="description">
+                        B.Ed(Computer Science), 2nd Year
+                    </p>
+                    <div class="socialnet">
+						<a href="tel:8768626927"><i class="ion ion-android-call"></i></a>
+						<a href="mailto:qntmupld@gmail.com"><i class="ion ion-email"></i></a>
+					</div>
+                </div>
+                </div>
+                </div>
+            </center>            
+            
+           
+           <center>
+ 		   <div class="medium-4 columns left">
+                <div class="team-image">
+                    <img src="img/img-2.jpg">
+                    <div class="team-info">
+                <strong>Registration Executive</strong>
+                    <h3 class="title">Bidisha hait</h3>
+                    <p class="description">
+                        M.Sc, 1st Year, Computer Science
+                    </p>
+                    <div class="socialnet">
+						<a href="tel:8768626927"><i class="ion ion-android-call"></i></a>
+						<a href="mailto:qntmupld@gmail.com"><i class="ion ion-email"></i></a>
+					</div>
+                </div>
+                </div>
+                </div>
+            </center>
+
+       </div> 
+       </center>
+     
+               </section>
+                     <footer class="p-footer p-scrolldown">
+                    <a href="#contact">
+                        <div class="arrow-d">
+							<div class="before">Contact</div>
+							<div class="after">Message</div>
+							<div class="circle"></div>
+						</div>
+                    </a>                        
+                </footer>
+                </div>
+              
+            
+                
+            <!-- Begin of Contact page   -->
+            <div class="section page-contact page page-cent  bg-color" data-bgcolor="rgba(95, 25, 208, 0.88)s" id="s-contact">
+				<!-- Begin of contact information -->
+				<div class="slide" id="information" data-anchor="information">
+					<section class="content">
+						<header class="p-title">
+							<h3>Contact<i class="ion ion-location">
+								</i>
+							</h3>
+							<ul class="buttons">
+								<li class="show-for-medium-up">
+									<a title="About" href="#about-us" ><i class="ion ion-android-information"></i></a>
+								</li>
+								<!--<li>
+									<a title="Contact" href="#contact/information"><i class="ion ion-location"></i></a>
+								</li>-->
+								<li>
+									<a title="Message" href="mailto://qntmupld@gmail.com"><i class="ion ion-email"></i></a>
+								</li>
+							</ul>
+						</header>
+						<!-- Begin Of Page SubSction -->
+						<div class="contact">
+							<div class="row">
+								<div class="medium-6 columns left">
+									<ul>
+										<li>
+											<h4>Email</h4>
+											<p><a href="mailto://technova18.docs@gmail.com">technova18.docs@gmail.com</a></p>
+										</li>
+										<li>
+											<h4>Address</h4>
+											<p>Department of Computer Science<br>Fakir Chand College<br>Diamond Harbour
+											<br>24 PGS (S)</p>
+										</li>
+										<li>
+											<h4>Phone</h4>
+											<p>+91 8768626927</p>
+										</li>
+									</ul>
+								</div>
+								<div class="medium-6 columns social-links right">
+									<ul>
+
+										<!-- legal notice -->
+										<li>
+											<h4>Website</h4>
+											<p><a href="http://www.technova18.info/">www.technova18.info</a></p>
+										</li>
+										<li>
+											<h4>Find us on</h4>
+											<!-- Begin of Social links -->
+											<div class="socialnet">
+												<a href="#"><i class="ion ion-social-facebook"></i></a>
+												<a href="#"><i class="ion ion-social-instagram"></i></a>
+												<a href="#"><i class="ion ion-social-twitter"></i></a>
+												<a href="#"><i class="ion ion-social-pinterest"></i></a>
+												<a href="#"><i class="ion ion-social-tumblr"></i></a>
+											</div>
+											<!-- End of Social links -->
+										</li>
+										<li>
+											<p><img src="img/logo_large.png" alt="Logo" class="logo"></p>
+											<p class="small"><strong><a href="http://technova18.info/">
+											Technova 18 </a></strong>by 
+											Department Of Computer Science,
+											Fakir Chand College. All right reserved 2018</p>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+						<!-- End of page SubSection -->
+					</section>  
+				</div>
+				<!-- end of contact information -->
+				
+				<!-- begin of contact message --> 
+				<div class="slide" id="message" data-anchor="message" style="display:none">
+					<section class="content">
+						<header class="p-title">
+							<h3>Write to us<i class="ion ion-email">
+								</i>
+							</h3>
+							<ul class="buttons">
+								<li class="show-for-medium-up">
+									<a title="About" href="#about-us"><i class="ion ion-android-information"></i></a>
+								</li>
+								<li>
+									<a title="Contact" href="#contact/information"><i class="ion ion-location"></i></a>
+								</li>
+								<!--<li>
+									<a title="Message" href="#contact/message"><i class="ion ion-email"></i></a>
+								</li>-->
+							</ul>
+						</header>
+						<!-- Begin Of Page SubSction -->
+						<div class="page-block c-right v-zoomIn">
+							<div class="wrapper">
+								<div>
+									<form class="message form send_message_form" method="get"
+									 action="https://script.google.com/macros/s/AKfycbwEiOqIY2o5E_l3CajpArACTJx-_T6UkmPVNfCzjkrEIyGFvrA/exec">
+										<div class="fields clearfix">
+											<div class="input">
+												<label for="mes-name">Name </label>
+												<input id="mes-name" name="name" type="text" placeholder="Your Name" required></div>
+											<div class="buttons">
+												<button id="submit-message" class="button email_b" name="submit">Ok</button>
+											</div>
+										</div>
+										<div class="fields clearfix">
+											<div class="input">
+												<label for="mes-email">Email </label>
+												<input id="mes-email" type="email" placeholder="Email Address" name="email" required>
+											</div>
+										</div>
+										<div class="fields clearfix no-border">
+											<label for="mes-text">Message </label>
+											<textarea id="mes-text" placeholder="Message ..." name="message" required></textarea>
+
+											<div>
+												<p class="message-ok invisible">Your message has been sent, thank you.</p>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<!-- End Of Page SubSction -->
+					</section>
+						
+				</div>
+				<!-- End of contact message -->
+            </div>
+            <!-- End of Contact page  -->   
+        
+        </main>
+
+        <!-- END OF site main content content here -->  
+		
+		<!-- Begin of site footer -->
+		<footer class="page-footer">
+			<span>Find us on 
+				<a href="http://www.facebook.com/technova18" target="_blank"><i class="ion icon ion-social-facebook"></i></a>
+				<a href="#" target="_blank"><i class="ion icon ion-social-instagram"></i></a>
+				<a href="#" target="_blank"><i class="ion icon ion-social-twitter"></i></a>
+			</span>
+		</footer>
+		<!-- End of site footer -->
+
+        
+<!--        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+        
+        <!-- All Javascript plugins goes here -->
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+		<!-- All vendor scripts -->
+        <script src="js/vendor/all.js"></script>
+		
+		<!-- Detailed vendor scripts -->
+        <!--<script src="./js/vendor/jquery.fullPage.min.js"></script>
+        <script src="./js/vendor/jquery.slimscroll.min.js"></script>
+        <script src="./js/vendor/jquery.knob.min.js"></script>
+        <script src="./js/vegas/vegas.min.js"></script>
+        <script src="./js/jquery.maximage.js"></script>
+        <script src="./js/okvideo.min.js"></script>-->
+		
+		<!-- Downcount JS -->
+        <script src="js/jquery.downCount.js"></script>
+		
+		<!-- Form script -->
+        <script src="js/form_script.js"></script>
+        
+		<!-- Javascript main files -->
+        <script src="js/main.js"></script>
+        
+
+		<script>
+		$(document).ready(function(){
+ $(document).bind("contextmenu",function(e){
+   return false;
+ });
+});
+		</script> 
+
+        <!-- Google Analytics: Uncomment and change UA-XXXXX-X to be your site"s ID. -->
+        <!--<script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src="//www.google-analytics.com/analytics.js";
+            r.parentNode.insertBefore(e,r)}(window,document,"script","ga"));
+            ga("create","UA-XXXXX-X");ga("send","pageview");
+        </script>-->
+    </body>
+
+</html>
