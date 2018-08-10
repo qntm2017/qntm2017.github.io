@@ -1589,8 +1589,8 @@ strong,
     z-index: -2;
 }
 .video-container video{
-    height: 724px; 
-    width: 1287px; 
+    height: 100%; 
+    width: 100%; 
     margin-top: -42px; 
     margin-left: 0px;   
 }
