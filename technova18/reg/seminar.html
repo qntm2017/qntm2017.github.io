@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 <html>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123753944-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123753944-1');
+</script>
+
+<link rel="icon" type="image/ico" href="img/favicon.ico">
+
+
+
 <title>Technova18 : Seminar Registration Window</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -138,7 +153,7 @@ input.invalid {
 <script>
 function total_fnp()
 {
-if(document.getElementById("total_p").value === '0')
+if(document.getElementById("total_p").value === '1')
 {
 document.getElementById("totalfn").innerHTML = "Number of Persons joining with you (including you) : 1";
 document.getElementById("first").style.display= "";
@@ -147,7 +162,7 @@ document.getElementById("third").style.display= "none";
 document.getElementById("s_f").value= "NULL";
 document.getElementById("t_f").value= "NULL";
 }
-if(document.getElementById("total_p").value === '1')
+if(document.getElementById("total_p").value === '2')
 {
 document.getElementById("totalfn").innerHTML = "Number of Persons joining with you (including you) : 2";
 document.getElementById("first").style.display= "";
@@ -155,7 +170,7 @@ document.getElementById("second").style.display= "";
 document.getElementById("third").style.display= "none";
 document.getElementById("t_f").value= "NULL";
 }
-if(document.getElementById("total_p").value === '2')
+if(document.getElementById("total_p").value === '3')
 {
 document.getElementById("totalfn").innerHTML = "Number of Persons joining with you (including you) : 3";
 document.getElementById("first").style.display= "";

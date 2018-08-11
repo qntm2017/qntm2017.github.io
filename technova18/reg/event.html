@@ -1,5 +1,19 @@
 <!DOCTYPE html>
 <html>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123753944-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123753944-1');
+</script>
+
+<link rel="icon" type="image/ico" href="img/favicon.ico">
+
+
 <title>Technova18 : Event Registration Window</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -167,7 +181,8 @@ input.invalid {
   <p><i>Event 1 (Select from the List): </i></p>
   	<p>
     <select name="fevent" required="true" style="padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
-    <option value="Web Design" selected >Design the Globe</option>
+    <option value="NULL" selected disabled>-- Select any One --</option>
+    <option value="Web Design">Design the Globe</option>
     <option value="Digikit">Digikit</option>
   	</select>
     </p>
@@ -197,7 +212,7 @@ input.invalid {
   <p><i>For 1st participant: </i></p>
     <p>
     <select name="ffood" required="true" style="padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
-    <option value="NULL" disabled="disabled" selected>-- Select --</option>
+    <option value="NULL" disabled="disabled" selected>-- Select any One --</option>
     <option value="non-veg">Non-Veg</option>
     <option value="veg">Veg</option>
   	</select>
@@ -206,7 +221,7 @@ input.invalid {
   <p><i>For 2nd participant: </i></p> 
     <p>
     <select name="sfood" style="padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
-    <option value="NULL" disabled="disabled" selected>-- Select --</option>
+    <option value="NULL" disabled="disabled" selected>-- Select any One --</option>
     <option value="non-veg">Non-Veg</option>
     <option value="veg">Veg</option>
   	</select>    
