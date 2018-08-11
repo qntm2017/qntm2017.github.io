@@ -156,14 +156,92 @@ input.invalid {
   
   <fieldset style="border-color: rgb(77, 22, 229);">
   <legend><b>Stream :</b></legend>
-  <p><i>Stream of Study of 1st Participant : </i></p><p><input type="text" required="true" placeholder="Enter Stream, eg: B.SC,B.Tech,B.C.A.,B.VOC,M.Sc,M.Tech,M.C.A." oninput="this.className = ''" name="fstrm"></p>
-  <p><i>Stream of Study of 2nd Participant : </i></p><p><input type="text" placeholder="Enter Stream, eg: B.SC,B.Tech,B.C.A.,B.VOC,M.Sc,M.Tech,M.C.A." oninput="this.className = ''" name="sstrm"></p>
+  <p><i>Stream of 1st participant: </i></p>
+  <p>
+  <select name="fstrm" id="fstrm" required="true" style="padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
+    <option value="NULL" disabled="disabled" selected>-- Select any One --</option>
+    <option value="BSC">B.SC</option>
+    <option value="MSC">M.SC</option>
+    <option value="BCA">B.C.A.</option>
+    <option value="MCA">M.C.A.</option>
+    <option value="BTECH">B.Tech</option>
+    <option value="MTECH">M.Tech</option>
+    <option value="BVOC">B.VOC</option>
+  </select>
+  </p>
+  <p><i>Stream of 2nd participant: </i></p>
+  <p>
+  <select name="sstrm" id="sstrm" required="true" style="padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
+    <option value="NULL" disabled="disabled" selected>-- Select any One --</option>
+    <option value="BSC">B.SC</option>
+    <option value="MSC">M.SC</option>
+    <option value="BCA">B.C.A.</option>
+    <option value="MCA">M.C.A.</option>
+    <option value="BTECH">B.Tech</option>
+    <option value="MTECH">M.Tech</option>
+    <option value="BVOC">B.VOC</option>
+  </select>
+  </p>
   </fieldset> <br>
   
   <fieldset style="border-color: rgb(77, 22, 229);">
-  <legend><b>Year / Semester :</b></legend>
-  <p><i>year or Semester of 1st Participant : </i></p><p><input type="text" required="true" placeholder="Enter Year/Semester, eg: 1st Yr,1st SEM..." oninput="this.className = ''" name="fyr"></p>
-  <p><i>year or Semester of 2nd Participant : </i></p><p><input type="text" placeholder="Enter Year/Semester, eg: 1st Yr,1st SEM..." oninput="this.className = ''" name="syr"></p>
+  <legend><b>Choose your Year or Semester of Study :</b></legend>
+  
+  <p><i>For 1st participant: </i></p>
+  <p>
+  <i>Year / Semester:</i>
+  <select id="fyrsmchk" onchange="fyrsmchng()" required="true" style="padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
+    <option value="NULL" disabled="disabled" selected>-- Select any One --</option>
+    <option value="YR" id="fyr">Year</option>
+    <option value="SM" id="fsm">Semester</option>
+  </select>
+  </p>
+  <p>
+  <select name="fyrsm" id="fyrsm" required="true" style="display:none; padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
+    <option value="NULL" disabled="disabled" selected>-- Select any One --</option>
+    <option value="1st Yr" id="fyr1">1st Year</option>
+    <option value="2nd Yr" id="fyr2">2nd year</option>
+    <option value="3rd Yr" id="fyr3">3rd year</option>
+    <option value="4th Yr" id="fyr4">4th Year</option>
+    <option value="1st SEM" id="fsm1">1st SEMESTER</option>
+    <option value="2nd SEM" id="fsm2">2nd SEMESTER</option>
+    <option value="3rd SEM" id="fsm3">3rd SEMESTER</option>
+    <option value="4th SEM" id="fsm4">4th SEMESTER</option>
+    <option value="5th SEM" id="fsm5">5th SEMESTER</option>
+    <option value="6th SEM" id="fsm6">6th SEMESTER</option>
+    <option value="7th SEM" id="fsm7">7th SEMESTER</option>
+    <option value="8th SEM" id="fsm8">8th SEMESTER</option>
+  </select>
+  </p>
+  
+  
+  <p><i>For 2nd participant: </i></p>
+  <p>
+  <i>Year / Semester:</i>
+  <select id="syrsmchk" onchange="syrsmchng()" required="true" style="padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
+    <option value="NULL" disabled="disabled" selected>-- Select any One --</option>
+    <option value="YR" id="syr">Year</option>
+    <option value="SM" id="ssm">Semester</option>
+  </select>
+  </p>
+  <p>
+  <select name="syrsm" id="syrsm" required="true" style="display:none; padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
+    <option value="NULL" disabled="disabled" selected>-- Select any One --</option>
+    <option value="1st Yr" id="syr1">1st Year</option>
+    <option value="2nd Yr" id="syr2">2nd year</option>
+    <option value="3rd Yr" id="syr3">3rd year</option>
+    <option value="4th Yr" id="syr4">4th Year</option>
+    <option value="1st SEM" id="ssm1">1st SEMESTER</option>
+    <option value="2nd SEM" id="ssm2">2nd SEMESTER</option>
+    <option value="3rd SEM" id="ssm3">3rd SEMESTER</option>
+    <option value="4th SEM" id="ssm4">4th SEMESTER</option>
+    <option value="5th SEM" id="ssm5">5th SEMESTER</option>
+    <option value="6th SEM" id="ssm6">6th SEMESTER</option>
+    <option value="7th SEM" id="ssm7">7th SEMESTER</option>
+    <option value="8th SEM" id="ssm8">8th SEMESTER</option>
+  </select>
+  </p>
+  
   </fieldset> <br>
   
   <fieldset style="border-color: rgb(77, 22, 229);">
@@ -253,9 +331,84 @@ input.invalid {
 
 
 <script>
-function chk()
+function fyrsmchng()
 {
+if(document.getElementById("fyrsmchk").value==="YR")
+	{
+	document.getElementById("fyrsm").style.display="";
+	document.getElementById("fyrsm").selectedIndex = "0";
+		document.getElementById("fyr1").style.display="";
+		document.getElementById("fyr2").style.display="";
+		document.getElementById("fyr3").style.display="";
+		document.getElementById("fyr4").style.display="";
+		document.getElementById("fsm1").style.display="none";
+		document.getElementById("fsm2").style.display="none";
+		document.getElementById("fsm3").style.display="none";
+		document.getElementById("fsm4").style.display="none";
+		document.getElementById("fsm5").style.display="none";
+		document.getElementById("fsm6").style.display="none";
+		document.getElementById("fsm7").style.display="none";
+		document.getElementById("fsm8").style.display="none";
+	}
 
+if(document.getElementById("fyrsmchk").value==="SM")
+	{
+	document.getElementById("fyrsm").style.display="";
+	document.getElementById("fyrsm").selectedIndex = "0";
+		document.getElementById("fyr1").style.display="none";
+		document.getElementById("fyr2").style.display="none";
+		document.getElementById("fyr3").style.display="none";
+		document.getElementById("fyr4").style.display="none";
+		document.getElementById("fsm1").style.display="";
+		document.getElementById("fsm2").style.display="";
+		document.getElementById("fsm3").style.display="";
+		document.getElementById("fsm4").style.display="";
+		document.getElementById("fsm5").style.display="";
+		document.getElementById("fsm6").style.display="";
+		document.getElementById("fsm7").style.display="";
+		document.getElementById("fsm8").style.display="";
+	}
+
+
+}
+
+function syrsmchng()
+{
+if(document.getElementById("syrsmchk").value==="YR")
+	{
+	document.getElementById("syrsm").style.display="";
+	document.getElementById("syrsm").selectedIndex = "0";
+		document.getElementById("syr1").style.display="";
+		document.getElementById("syr2").style.display="";
+		document.getElementById("syr3").style.display="";
+		document.getElementById("syr4").style.display="";
+		document.getElementById("ssm1").style.display="none";
+		document.getElementById("ssm2").style.display="none";
+		document.getElementById("ssm3").style.display="none";
+		document.getElementById("ssm4").style.display="none";
+		document.getElementById("ssm5").style.display="none";
+		document.getElementById("ssm6").style.display="none";
+		document.getElementById("ssm7").style.display="none";
+		document.getElementById("ssm8").style.display="none";
+	}
+
+if(document.getElementById("syrsmchk").value==="SM")
+	{
+	document.getElementById("syrsm").style.display="";
+	document.getElementById("syrsm").selectedIndex = "0";
+		document.getElementById("syr1").style.display="none";
+		document.getElementById("syr2").style.display="none";
+		document.getElementById("syr3").style.display="none";
+		document.getElementById("syr4").style.display="none";
+		document.getElementById("ssm1").style.display="";
+		document.getElementById("ssm2").style.display="";
+		document.getElementById("ssm3").style.display="";
+		document.getElementById("ssm4").style.display="";
+		document.getElementById("ssm5").style.display="";
+		document.getElementById("ssm6").style.display="";
+		document.getElementById("ssm7").style.display="";
+		document.getElementById("ssm8").style.display="";
+	}
 
 
 }

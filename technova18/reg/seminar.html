@@ -69,9 +69,9 @@ input.invalid {
   
   <fieldset style="border-color: rgb(229, 22, 141);">
   <legend><b>Personal Detials:</b></legend>
-  <p><i>Name of Student : </i></p><p><input type="text" required="true" placeholder="Enter Full Name" name="name" id="fname"></p>
-  <p><i>Email ID of the Student : </i></p><p><input type="email" required="true" placeholder="Enter Email ID" name="email"></p>
-  <p><i>Phone No. of the Student : </i></p><p><input type="number" required="true" placeholder="Enter Phone Number" name="ph"></p>
+  <p><i>Name of Student : </i></p><p><input type="text" required="true" title="Should contain your Name" placeholder="Enter Full Name" name="name"></p>
+  <p><i>Email ID of the Student : </i></p><p><input type="email" title="Must be a valid Email ID" required="true" placeholder="Enter Email ID" name="email"></p>
+  <p><i>Phone No. of the Student : </i></p><p><input type="number" pattern="[0-9]{10}" title="Must be a 10 Digit Phone Number" required="true" placeholder="Enter Phone Number" name="ph"></p>
    
     <p><i>How much person will you bring with you? </i></p>
   	<p>
@@ -137,9 +137,6 @@ input.invalid {
 
       <h1>Thanks for registering with Technova18.<br>
         We will get back to you soon.</h1>
-        <p>Your Deatils is Secured with Us.</p>
-
-<div id="placeHolder"></div>
       
 	</div>
                 
@@ -179,9 +176,8 @@ document.getElementById("third").style.display= "";
 }
 
 }
-</script>
 
-<script type="text/javascript" src="qr/qrcode.js"></script>
+</script>
 
 </body>
 </html>
