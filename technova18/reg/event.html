@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123753944-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -10,44 +10,132 @@
 
   gtag('config', 'UA-123753944-1');
 </script>
-
-<link rel="icon" type="image/ico" href="img/favicon.ico">
-
-
 <title>Technova18 : Event Registration Window</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/ico" href="img/favicon.ico">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-<style>
-* {
-  box-sizing: border-box;
-}
 
-body {
- background-image: url("img/tr.png"), url("img/ckt.png") ;
- background-repeat: no-repeat;
+<style type="text/css">
+body{
+	background-image: url("img/tr.png"), url("img/ckt.png") ;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center; 
-    /*opacity: 0.5;*/
+    background-position: center;
+}
+.form-style-10{
+	max-width:700px;
+	padding:30px;
+	margin:40px auto;
+	background:rgba(32, 147, 249, 0.5);
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+.form-style-10 .inner-wrap{
+	padding: 30px;
+	background: rgba(32, 194, 249, 0.4);
+	border-radius: 6px;
+	margin-bottom: 15px;
+}
+.form-style-10 h1{
+	background: #2A88AD;
+	padding: 20px 30px 15px 30px;
+	margin: -30px -30px 30px -30px;
+	border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Bitter', serif;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #257C9E;
+}
+.form-style-10 h1 > span{
+	display: block;
+	margin-top: 2px;
+	font: 13px Arial, Helvetica, sans-serif;
+}
+.form-style-10 label{
+	display: block;
+	font: 13px Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+	margin-bottom: 15px;
+}
+.form-style-10 input[type=text], .form-style-10 input[type=date], .form-style-10 input[type=datetime], .form-style-10 input[type=email], .form-style-10 input[type=number], .form-style-10 input[type=search], .form-style-10 input[type=time], .form-style-10 input[type=url], .form-style-10 input[type=password], .form-style-10 textarea, .form-style-10 select {
+	display: block;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 8px;
+	border-radius: 6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border: 2px solid #fff;
+	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
 }
 
-h1 {
-  text-align: center;  
+.form-style-10 .section{
+	font: normal 20px 'Bitter', serif;
+	color:#FFFFFF;
+	margin-bottom: 5px;
+}
+.form-style-10 .section span {
+	background: #2A88AD;
+	padding: 5px 10px 5px 10px;
+	position: absolute;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border: 4px solid #fff;
+	font-size: 14px;
+	margin-left: -45px;
+	color: #fff;
+	margin-top: -3px;
+}
+.form-style-10 input[type=button], .form-style-10 input[type=submit]{
+	background: #2A88AD;
+	padding: 8px 20px 8px 20px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Bitter', serif;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #257C9E;
+	font-size: 15px;
+}
+.form-style-10 input[type=button]:hover, .form-style-10 input[type=submit]:hover{
+	background: #2A6881;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+.form-style-10 .privacy-policy{
+	float: right;
+	width: 250px;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #4D4D4D;
+	margin-top: 10px;
+	text-align: right;
 }
 
-input {
-  padding: 10px;
-  width: 100%;
-  font-size: 17px;
-  font-family: Raleway;
-  border: 1px solid #aaaaaa;
-}
-
-/* Mark input boxes that gets an error on validation: */
-input.invalid {
-  background-color: #ffdddd;
-}
-
-/* The chck */
+</style>
+<style>
 .chck {
     display: block;
     position: relative;
@@ -113,52 +201,43 @@ input.invalid {
     transform: rotate(45deg);
 }
 
-
 </style>
+
+
 <body>
-  <h1><font size="25" color="yellow"> Technova18 : Annual Technical Fest </font></h1>
-  <h1><font size="25" color="#FFCCFF"> Department of Computer Science, Fakir Chand COllege </font></h1>
-  
-  <form class="gform pure-form pure-form-stacked" method="POST" data-email="technova18.docs@gmail.com" action="https://script.google.com/macros/s/AKfycbzQKJo4VlhR2UGVWQI7Gyo274gkXEckFivXOFSB4eO3OA3Ad5Z8/exec" style="background-color: rgba(36, 193, 214,0.7);
-  margin: 100px auto;
-  font-family: Raleway;
-  padding: 40px;
-  width: 70%;
-  min-width: 300px;">
+<center><h1 style="font-family:'Comic Sans MS';color:#FF6699;font-size:30px"> Technova18 : Annual Technical Fest</h1></center>
+  <center><h1 style="font-family:Fixedsys;color:#33CC33;font-size:40px"> Department of Computer Science, Fakir Chand College </h1></center>
+<div id="frm">
+<div class="form-style-10">
+<h1>Event Registration Window<span>We need some basic information, it takes few second!</span></h1>
+<form class="gform pure-form pure-form-stacked" method="POST" data-email="technova18.docs@gmail.com" action="https://script.google.com/macros/s/AKfycbzQKJo4VlhR2UGVWQI7Gyo274gkXEckFivXOFSB4eO3OA3Ad5Z8/exec">
+    
+    <center><b style="color:white;font-family:'Lucida Handwriting';font-size:20px">Personal Details</b></center><br>
+    <div class="section"><span>1</span>Participant Name</div>
+    <div class="inner-wrap">
+        <label>Name of 1st Participant<input type="text" required="true" placeholder="Enter Full Name" oninput="this.className = ''" name="fname" id="fname"></label>
+        <label>Name of 2nd Participant<input type="text" placeholder="Enter Full Name" oninput="this.className = ''" name="sname"></label>
+    </div>
 
+    <div class="section"><span>2</span>Email Id</div>
+    <div class="inner-wrap">
+        <label>Email Of 1st Participant<input type="email" required="true" placeholder="Enter Email ID" oninput="this.className = ''" name="fmail"></label>
+        <label>Email Of 2nd Participant<input type="email" placeholder="Enter Email ID" oninput="this.className = ''" name="smail"></label>
+    </div>
 
-  <p><center><font size="25" color="white">Event Registration Window</font></center></p>
-  <div class="form-elements">
-
-		<br><br>
-
-  <center><b>Personal Details</b></center><br>
-  
-  <fieldset style="border-color: rgb(229, 22, 141);">
-  <legend><b>Name:</b></legend>
-  <p><i>Name of 1st Participant : </i></p><p><input type="text" required="true" placeholder="Enter Full Name" oninput="this.className = ''" name="fname" id="fname"></p>
-  <p><i>Name of 2nd Participant : </i></p><p><input type="text" placeholder="Enter Full Name" oninput="this.className = ''" name="sname"></p>
-  </fieldset> <br>
-   
-  <fieldset style="border-color: rgb(229, 22, 141);">
-  <legend><b>Email ID:</b></legend>
-  <p><i>Email ID of 1st Participant : </i></p><p><input type="email" required="true" placeholder="EnterEmail ID" oninput="this.className = ''" name="fmail"></p>
-  <p><i>Email ID of 2nd Participant : </i></p><p><input type="email" placeholder="Enter Email ID" oninput="this.className = ''" name="smail"></p>
-  </fieldset> <br>
-  
-  <fieldset style="border-color: rgb(229, 22, 141);">
-  <legend><b>Phone No.:</b></legend>
-  <p><i>Phone No. of 1st Participant : </i></p><p><input type="number" required="true" placeholder="Enter Phone No." oninput="this.className = ''" name="fph"></p>
-  <p><i>Phone No. of 2nd Participant : </i></p><p><input type="number" placeholder="Enter Phone No." oninput="this.className = ''" name="sph"></p>
-  </fieldset> <br>
-  
-  <center><b>Academic Details</b></center><br>
-  
-  <fieldset style="border-color: rgb(77, 22, 229);">
-  <legend><b>Stream :</b></legend>
-  <p><i>Stream of 1st participant: </i></p>
-  <p>
-  <select name="fstrm" id="fstrm" required="true" style="padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
+    <div class="section"><span>3</span>Phone No.</div>
+        <div class="inner-wrap">
+        <label>Phone No. Of 1st Participant<input type="number" required="true" placeholder="Enter Phone No." oninput="this.className = ''" name="fph"></label>
+        <label>Phone No. Of 2nd Participant<input type="number" placeholder="Enter Phone No." oninput="this.className = ''" name="sph"></label>
+    </div>
+    
+    
+    
+    <!-- Academic Details -->
+    <center><b style="color:white;font-family:'Lucida Handwriting';font-size:20px">Academic Details</b></center><br>
+    <div class="section"><span>1</span>Stream</div>
+    <div class="inner-wrap">
+        <label>Stream of Study of 1st Participant<select name="fstrm" id="fstrm" required="true" style="padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
     <option value="NULL" disabled="disabled" selected>-- Select any One --</option>
     <option value="BSC">B.SC</option>
     <option value="MSC">M.SC</option>
@@ -168,10 +247,8 @@ input.invalid {
     <option value="MTECH">M.Tech</option>
     <option value="BVOC">B.VOC</option>
   </select>
-  </p>
-  <p><i>Stream of 2nd participant: </i></p>
-  <p>
-  <select name="sstrm" id="sstrm" required="true" style="padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
+</label>
+        <label>Stream of Study of 2nd Participant<select name="sstrm" id="sstrm" required="true" style="padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
     <option value="NULL" disabled="disabled" selected>-- Select any One --</option>
     <option value="BSC">B.SC</option>
     <option value="MSC">M.SC</option>
@@ -180,22 +257,16 @@ input.invalid {
     <option value="BTECH">B.Tech</option>
     <option value="MTECH">M.Tech</option>
     <option value="BVOC">B.VOC</option>
-  </select>
-  </p>
-  </fieldset> <br>
-  
-  <fieldset style="border-color: rgb(77, 22, 229);">
-  <legend><b>Choose your Year or Semester of Study :</b></legend>
-  
-  <p><i>For 1st participant: </i></p>
-  <p>
-  <i>Year / Semester:</i>
-  <select id="fyrsmchk" onchange="fyrsmchng()" required="true" style="padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
+  </select></label>
+    </div>
+
+    <div class="section"><span>2</span>Year / Semester</div>
+    <div class="inner-wrap">
+        <label>Year or Semester of 1st Participant<select id="fyrsmchk" onchange="fyrsmchng()" required="true" style="padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
     <option value="NULL" disabled="disabled" selected>-- Select any One --</option>
     <option value="YR" id="fyr">Year</option>
     <option value="SM" id="fsm">Semester</option>
   </select>
-  </p>
   <p>
   <select name="fyrsm" id="fyrsm" required="true" style="display:none; padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
     <option value="NULL" disabled="disabled" selected>-- Select any One --</option>
@@ -212,18 +283,14 @@ input.invalid {
     <option value="7th SEM" id="fsm7">7th SEMESTER</option>
     <option value="8th SEM" id="fsm8">8th SEMESTER</option>
   </select>
+
   </p>
-  
-  
-  <p><i>For 2nd participant: </i></p>
-  <p>
-  <i>Year / Semester:</i>
-  <select id="syrsmchk" onchange="syrsmchng()" required="true" style="padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
+  </label>
+        <label>Year or Semester of 2nd Participant<select id="syrsmchk" onchange="syrsmchng()" required="true" style="padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
     <option value="NULL" disabled="disabled" selected>-- Select any One --</option>
     <option value="YR" id="syr">Year</option>
     <option value="SM" id="ssm">Semester</option>
   </select>
-  </p>
   <p>
   <select name="syrsm" id="syrsm" required="true" style="display:none; padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
     <option value="NULL" disabled="disabled" selected>-- Select any One --</option>
@@ -241,93 +308,92 @@ input.invalid {
     <option value="8th SEM" id="ssm8">8th SEMESTER</option>
   </select>
   </p>
-  
-  </fieldset> <br>
-  
-  <fieldset style="border-color: rgb(77, 22, 229);">
-  <legend><b>College Name :</b></legend>
-  <p><i>College Name 1st Participant : </i></p><p><input type="text" required="true" placeholder="Enter College Name" oninput="this.className = ''" name="fclg"></p>
-  <p><i>College Name 2nd Participant : </i></p><p><input type="text" placeholder="Enter College Name" oninput="this.className = ''" name="sclg"></p>
-  </fieldset> <br>
-  
-  <center><b>Participation Details</b></center><br>
-  
-  <fieldset style="border-color: rgb(4, 104, 40);">
-  <legend><b>Event to Participate (Group Participation) :</b></legend>
-  
-  <p><i>Select Events for your Group: </i></p>
-  <p><i>Event 1 (Select from the List): </i></p>
-  	<p>
+</label>
+    </div>
+
+    <div class="section"><span>3</span>College Name</div>
+        <div class="inner-wrap">
+        <label>College Name 1st Participant<input type="text" required="true" placeholder="Enter College Name" oninput="this.className = ''" name="fclg"></label>
+        <label>College Name 2nd Participant<input type="text" placeholder="Enter College Name" oninput="this.className = ''" name="sclg"></label>
+    </div>
+
+
+	<!-- Partitipation Detaails-->
+	<center><b style="color:white;font-family:'Lucida Handwriting';font-size:20px">Participation Details</b></center><br>
+	<div class="section"><span>1</span>Event to Participate (Group Participation)</div>
+        <div class="inner-wrap">
+        <label>
+        <h style="font-size:18px;font-family:Verdana">Select Events for your Group:</h>
+        <p>Event 1 (Select from the List):</p>
+        <p>
     <select name="fevent" required="true" style="padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
     <option value="NULL" selected disabled>-- Select any One --</option>
     <option value="Web Design">Design the Globe</option>
     <option value="Digikit">Digikit</option>
   	</select>
     </p>
-  <p><i>Event 2 (Check to participate): </i></p>
-  	<label class="chck">We want to join Code-Battle<input type="checkbox" name="sevent" value="Code-Battle"><span class="checkmark"></span></label>
-  </fieldset><br>
-  
-  <fieldset style="border-color: rgb(4, 104, 40);">
-  <legend><b>Event to Participate (Individual Participation):</b></legend>
-    
-    <p><i>For 1st participant:</i></p>
-    <p>    
-    <label class="chck">I want to Join Battle of Word<input type="checkbox" name="debate" value="fp"><span class="checkmark" onclick="chk()"></span></label>
-    </p>
-    <p><i>For 2nd participant:</i></p>
-    <p>
-    <label class="chck">I want to Join Battle of Word<input type="checkbox" name="debate" value="sp"><span class="checkmark"></span></label>
-    </p>
+    <p>Event 2 (Check to participate):</p>
+	<label class="chck" style="font-size:18px">We want to join <strong>Code-Battle</strong><input type="checkbox" name="sevent" value="Code-Battle"><span class="checkmark"></span></label>
+	<label class="chck" style="font-size:18px">We want to join <strong>Mindbend</strong><input type="checkbox" name="tevent" value="Mindbend"><span class="checkmark"></span></label>
+	</label>
+    </div>
+	<div class="section"><span>2</span>Event to Participate (Individual Participation):</div>
+        <div class="inner-wrap">
+        <label>
+        <h style="font-size:18px;font-family:Verdana">For 1st participant:</h>
+        <label class="chck">I want to Join Battle of Word<input type="checkbox" name="debate" value="fp"><span class="checkmark" onclick="chk()"></span></label>
+		<h style="font-size:18px;font-family:Verdana">For 2nd participant:</h>
+		<label class="chck">I want to Join Battle of Word<input type="checkbox" name="debate" value="sp"><span class="checkmark" onclick="chk()"></span></label>
+		</label>
+        </div>
 
-  </fieldset> <br>
-
-  <center><b>Preferred Foodservice</b></center><br>
-
-  <fieldset style="border-color: rgb(117, 62, 7);">
-  <legend><b>Food Chioce:</b></legend>
-  
-  <p><i>For 1st participant: </i></p>
-    <p>
-    <select name="ffood" required="true" style="padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
+	<!-- Food -->
+	<center><b style="color:white;font-family:'Lucida Handwriting';font-size:20px">Preferred Foodservice</b></center><br>
+	<div class="section"><span>1</span>Food Choice:</div>
+        <div class="inner-wrap">
+        <label>For 1st Participant:<select name="ffood" required="true" style="padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
     <option value="NULL" disabled="disabled" selected>-- Select any One --</option>
     <option value="non-veg">Non-Veg</option>
     <option value="veg">Veg</option>
-  	</select>
-    </p>
-
-  <p><i>For 2nd participant: </i></p> 
-    <p>
-    <select name="sfood" style="padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
+  	</select></label>
+        <label>For 2nd Participant:<select name="sfood" style="padding: 10px; width: 100%; font-size: 17px; font-family: Raleway; border: 1px solid #aaaaaa;">
     <option value="NULL" disabled="disabled" selected>-- Select any One --</option>
     <option value="non-veg">Non-Veg</option>
     <option value="veg">Veg</option>
-  	</select>    
-    </p>
-  </fieldset> <br>
-
-	<p><center><i>Event Participants are requested not to fill up Seminar Form. They are automatically taken as
+  	</select></label>
+    </div>
+<p><center><i>Event Participants are requested not to fill up Seminar Form. They are automatically taken as
     entry for the Seminar. Seminar is about the topic </i><u><strong>"Cryptography"</strong></u><i> by </i><u><strong>Dr. Mridul Nandi, ISI Kolkata</strong></u>
     </center></p>
-   
-	<center><input type="submit" value="Submit" style="padding: 10px; width: 40%; font-style:oblique; font-size: 17px; font-family: Times New Roman; border: 1px solid #aaaaaa;" onclick="getdetails()">
-    </center>
-    </div>   
- 
-<div class="thankyou_message" style="display:none;">
 
-      <h1>Thanks for registering with Technova18.<br>
+	
+    <center><div class="button-section">
+     <input type="submit" value="Submit" onclick="abc()">
+    </div></center>
+    
+    <div class="thankyou_message" style="display:none;"></div>
+
+
+</form>
+</div>
+
+
+</div>
+
+
+<div class="form-style-10" id="msg" style="display:none;">
+
+    <br><br> <h1>Thanks for registering with Technova18.<br>
         We will get back to you soon.</h1>
-
-<div id="placeHolder"></div>
       
 	</div>
-                
-	</form>
-  <!-- Submit the Form to Google Using "AJAX" -->
-  <script data-cfasync="false" type="text/javascript"
+
+
+
+<!-- Java Script -->
+
+<script data-cfasync="false" type="text/javascript"
   src="js/main.js"></script>
-<!-- END -->
 
 
 <script>
@@ -412,10 +478,14 @@ if(document.getElementById("syrsmchk").value==="SM")
 
 
 }
+function abc()
+{
+	document.getElementById("frm").style.display="none";
+	document.getElementById("msg").style.display="";
+
+}
 
 </script>
-
-<script type="text/javascript" src="qr/qrcode.js"></script>
 
 </body>
 </html>
