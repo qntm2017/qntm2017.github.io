@@ -1,0 +1,124 @@
+<html>
+<head>
+
+<title>Smart Attendance System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<Script src="https://code.jquery.com/jquery-3.3.1.js" type="text/javascript"></Script>     
+<style>
+tab_report {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 3px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #acc2e5;
+}
+</style>
+</head>
+<body>
+
+  <h2>Report Table</h2>
+
+<table id="tab_report">
+    <thead>
+     <tr>
+      <th>Name</th>
+      <th>Roll</th>
+      <th>Stream</th>
+      <th>Semester</th>
+      <th>SUB 1</th>
+      <th>Theory 1</th>
+      <th>Practical 1</th>
+      <th>SUB 2</th>
+      <th>Theory 2</th>
+      <th>Practical 2</th>
+      <th>SUB 3</th>
+      <th>Theory 3</th>
+      <th>Practical 3</th>
+      <th>Total Theory</th>
+      <th>Total Practical</th>
+      <th>Total Class</th>
+      <th>Last Class Attended</th>
+    </tr>
+   </thead>
+   <tbody id="table_body">
+	
+   </tbody>
+   <tfoot>
+     <tr>
+      <th>Name</th>
+      <th>Roll</th>
+      <th>Stream</th>
+      <th>Semester</th>
+      <th>SUB 1</th>
+      <th>Theory 1</th>
+      <th>Practical 1</th>
+      <th>SUB 2</th>
+      <th>Theory 2</th>
+      <th>Practical 2</th>
+      <th>SUB 3</th>
+      <th>Theory 3</th>
+      <th>Practical 3</th>
+      <th>Total Theory</th>
+      <th>Total Practical</th>
+      <th>Total Class</th>
+      <th>Last Class Attended</th>
+    </tr>
+   </tfoot>
+</table>
+
+<button onclick="myFunction()">Click me</button>
+
+<div id="rowscnt">Total Rows: </div>
+
+<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB2lGY5R29QX72W1X4iYe0Vfq6MiVxg1w0",
+    authDomain: "std-db-fcc.firebaseapp.com",
+    databaseURL: "https://std-db-fcc.firebaseio.com",
+    projectId: "std-db-fcc",
+    storageBucket: "std-db-fcc.appspot.com",
+    messagingSenderId: "1013603663766"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="report.js"></script>
+
+<script>
+function myFunction() {
+  var rowCount = $('#table_body tr').length;
+$("#rowscnt").text("Row Count = " + rowCount +"");
+}
+function abc(x) {
+var t = document.getElementById('tab_report');
+  //alert("Row index is: " + x.rowIndex);
+var rInd = x.rowIndex;
+//alert(rInd);
+  var val1 =$(t.rows[rInd].cells[1]).text();
+    alert(val1);
+   var valr=val1 - 0;
+   valr = valr + 1;
+   t.rows[rInd].cells[1].innerHTML = valr;
+   
+var database = firebase.database();
+firebase.database().ref(0211102018).set({
+    Roll: valr
+  });
+
+}
+
+</script>
+</body>
+</html>
