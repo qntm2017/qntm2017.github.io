@@ -2,6 +2,9 @@
 
 <html lang="en">
 
+
+<!-- Mirrored from qntm2017.github.io/technovafcc/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jan 2020 12:53:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
         <meta charset="utf-8">
         <title>
@@ -20,7 +23,8 @@
 		<link href="css/colors/blue-2.css" media="screen" rel="stylesheet" title="blue-2" type="text/css">
 
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900%7CDosis:200,300,400,500,600,700,800%7COswald:300,400,700%7CMontserrat:400,700%7CItaliana" rel=
-        "stylesheet" type="text/css"><!-- google fonts end -->
+        "stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Stylish' rel='stylesheet'><!-- google fonts end -->
 
         <style type="text/css">
             /* width */
@@ -142,7 +146,11 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
+.workshop{
+  text-align: center;
+  padding: 25px;
+  margin: auto;
+}
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -245,7 +253,55 @@ a.ptg:hover::after{
 }
 
 </style>
+<style type="text/css">
+	.events{
+  text-align: center;
+  padding-top: 25px;
+}
+.box {
+  background: rgba(104, 146, 153,.8);
+  position: relative;
+  display: inline-block;
+  width: 80%;
+  height: 30%;
+  box-shadow: 0px 0px 15px rgb(153, 214, 222);
+  padding: 25px;
+  border:4px solid #2DE0DD; 
+  border-radius: 25px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
 
+.pt{
+    font-family: 'Stylish';font-size: 22px;
+    text-align: center;
+}
+
+.box::after {
+  content: "";
+  border-radius: 25px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+  cursor: pointer;
+}
+
+.box:hover::after {
+    opacity: 1;
+}
+</style>
 
     </head>
     <body>
@@ -286,6 +342,9 @@ a.ptg:hover::after{
                                     <li class="menu">
                                         <a class="menu-state page-open-clicker open-page-3 link" href="#">Events</a>
                                     </li>
+                                    <li class="menu" style="display:none;">
+                                        <a class="menu-state page-open-clicker open-page-5 link" href="#">Workshop</a>
+                                    </li>
                                     <li class="menu">
                                         <a class="menu-state page-open-clicker open-page-2 link" href="#">Team</a>
                                     </li>
@@ -320,12 +379,16 @@ a.ptg:hover::after{
                                     <li class="menu">
                                         <a class="menu-state page-open-clicker-mobile open-page-3 link" href="#">Events</a>
                                     </li>
+                                    <li class="menu" style="display:none;">
+                                        <a class="menu-state page-open-clicker-mobile open-page-5 link" href="#">Workshop</a>
+                                    </li>
                                     <li class="menu">
                                         <a class="menu-state page-open-clicker-mobile open-page-2 link" href="#">Team</a>
                                     </li>
                                     <li class="menu">
                                         <a class="menu-state page-open-clicker-mobile open-page-4 link" href="#">Contact</a>
                                     </li>
+                                    
                                     <li class="menu credits page-open-clicker-active-mobile">
                                         <a href="#">All Rights Reserved &copy; Technova</a>
                                     </li>
@@ -460,7 +523,7 @@ a.ptg:hover::after{
                                     <!-- row start -->
                                     <div class="row">
                                         <!-- intro start -->
-                                        <center><p><font size="4"><b>Department of Computer Science - Fakir Chand College <br> Presents </b></font></p></center><br><br>
+                                        <center><p><font size="3.5"><b>Department of Computer Science - Fakir Chand College <br> Presents </b></font></p></center><br><br>
                                         <div class="intro-wrapper">
                                             <!-- intro TIME style start -->
                                             <div class="unveil-time">
@@ -506,10 +569,10 @@ a.ptg:hover::after{
                                                 <div id="newsletter">
                                                     <div class="newsletter">
                                                         <form id="subscribe" method="post" name="subscribe">
-                                                            <span class="input input--kuro"><input class="subscribe-requiredField subscribe-email input__field input__field--kuro" id="subscribe-email"
+                                                            <span class="input input--kuro"><input style="display: none;" class="subscribe-requiredField subscribe-email input__field input__field--kuro" id="subscribe-email"
                                                             name="subscribe-email" type="text"> <label class="input__label input__label--kuro" for="subscribe-email"><span class=
-                                                            "mail input__label-content input__label-content--kuro">Email</span></label> <button class="submit-button-2" id="submit-2" type=
-                                                            "submit">Get Latest Updates</button></span>
+                                                            "mail input__label-content input__label-content--kuro">Email</span></label> <button onclick="window.open('reg/index.html');" class="submit-button-2" id="submit-2" type=
+                                                            "submit">Register Soon</button><button onclick="window.open('events/schedule.pdf');" class="submit-button-2" id="submit-2" type="submit">Get Event Schedule (PDF)</button></span>
                                                         </form>
                                                     </div>
                                                 </div>
@@ -537,13 +600,13 @@ a.ptg:hover::after{
                                                 All Events have separate 3 Prizes <span class="quote-signature"> Register Soon</span>
                                             </li>
                                             <li class="quote-text">Game Mode<br><br>
-                                                For the First time we have brought Game Mode<span class="quote-signature">Participate Now</span>
+                                                For the First time we managed to organize Gaming Zone<span class="quote-signature">Participate Now</span>
                                             </li>
-                                            <li class="quote-text">Semi Online<br><br>
-                                                Some Prelims will be Online and all Final will be in Offline Mode<span class="quote-signature">Explore Events</span>
+                                            <li class="quote-text">Both Offline & Online<br><br>
+                                                This Year we have organized Online Events alongside Offline Events. <span class="quote-signature">Explore our Events</span>
                                             </li>
                                             <li class="quote-text">Workshop<br><br>
-                                                1-Day Workshop on Android app Development<span class="quote-signature">Go to Details</span>
+                                                This year we are providing Workshops on 3D Printing Technology, Arduino & Robotics and Android app Development<span class="quote-signature">View Workshop Details</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -1104,8 +1167,171 @@ a.ptg:hover::after{
 <br><br><br>
 -->
 
-                                            <section class="dem">
-                                                <div>
+<section class="dem">
+<div>
+
+<div class="events">
+  <div class="box" onclick="window.open('events/treasure_hunt.html')">
+    <center>
+    <p class="pt">TREASURE HUNT</p>
+    <br><p>Hunting answer of a specific theme based question</p>
+      </center>
+  </div>
+</div>
+
+
+<div class="events">
+  <div class="box" onclick="window.open('events/protomate.html')">
+    <center>
+    <p class="pt">PROTOMATE</p>
+    <br><p>Design and Development of a Particular theme based Software</p>
+      </center>
+  </div>
+</div>
+
+<div class="events">
+  <div class="box" onclick="window.open('events/web.html')">
+    <center>
+    <p class="pt">DRAW THE WEB</p>
+    <br><p>Website Design Contest</p>
+      </center>
+  </div>
+</div>
+
+<div class="events">
+  <div class="box" onclick="window.open('events/poster_design.html')">
+    <center>
+    <p class="pt">POSTER DESIGN</p>
+    <br><p>Logo, Poster and Banner Design Contest</p>
+      </center>
+  </div>
+</div>
+
+<div class="events">
+  <div class="box" onclick="window.open('events/battle_of_words.html')">
+    <center>
+    <p class="pt">BATTLE OF WORDS</p>
+    <br><p>Technology theme based Debate Contest</p>
+      </center>
+  </div>
+</div>
+
+<div class="events">
+  <div class="box" onclick="window.open('events/code-arena.html')">
+    <center>
+    <p class="pt">CODE-ARENA</p>
+    <br><p>Programming Language based Coding Contest</p>
+      </center>
+  </div>
+</div>
+
+<div class="events">
+  <div class="box" onclick="window.open('events/decryptus.html')">
+    <center>
+    <p class="pt">DECRYPTUS</p>
+    <br><p>Decrypt given encrypted data using different encryption technology</p>
+      </center>
+  </div>
+</div>
+
+<div class="events">
+  <div class="box" onclick="window.open('events/digikit.html')">
+    <center>
+    <p class="pt">DIGIKIT</p>
+    <br><p>Digital IC and Arduino Based Circuit Design Contest</p>
+      </center>
+  </div>
+</div>
+
+<div class="events">
+  <div class="box" onclick="window.open('events/mindbend.html')">
+    <center>
+    <p class="pt">MINDBEND</p>
+    <br><p>Technology based Quiz Contest</p>
+      </center>
+  </div>
+</div>
+<br>
+
+
+<div class="unveil">
+ <h4>
+ 	Workshop
+ </h4>
+</div>
+
+<center>
+<div class="workshop">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div class="plate">
+      	<div style="width:100%; height:30px;"></div>
+      	<img src="img/workshop1.png" alt="Event" style="width:100px;height:100px;">
+  <p class="pt"> <font size="5.5"><span>3D Printing Technology</span></font></p>
+  </div>
+    </div>
+    <div class="flip-card-back">
+    	<div style="width:100%; height:20px;"></div>
+    	<font size="5.5" face="Times New Roman">
+    		<img src="img/speaker1.png" alt="Event" style="width:100px;height:100px;">
+      	<h1><u>Resource Speaker</u><br>Gyan Krishna Sreekar</h1> 
+  		</font>
+      	<br>
+      <a class="ptg" href="events/3D_printing_technology.html" target="_blank">More Details</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="workshop">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div class="plate">
+      	<div style="width:100%; height:30px;"></div>
+      	<img src="img/workshop2.png" alt="Event" style="width:100px;height:100px;">
+  <p class="pt"> <font size="5.5"><span>Arduino & Robotics</span></font></p>
+  </div>
+    </div>
+    <div class="flip-card-back">
+    	<div style="width:100%; height:20px;"></div>
+    	<font size="5.5" face="Times New Roman">
+    		<img src="img/speaker2.png" alt="Event" style="width:100px;height:100px;">
+      	<h1><u>Resource Speaker</u><br>Ammar Hossain Laskar</h1> 
+  		</font>
+      	<br>
+      <a class="ptg" href="events/arduino_robotics.html" target="_blank">More Details</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="workshop">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div class="plate">
+      	<div style="width:100%; height:30px;"></div>
+      	<img src="img/workshop3.png" alt="Event" style="width:100px;height:100px;">
+  <p class="pt"> <font size="5.5"><span>Android App Development</span></font></p>
+  </div>
+    </div>
+    <div class="flip-card-back">
+    	<div style="width:100%; height:20px;"></div>
+    	<font size="5.5" face="Times New Roman">
+    		<img src="img/speaker3.png" alt="Event" style="width:100px;height:100px;">
+      	<h1><u>Resource Speaker</u><br>Ammar Hossain Laskar</h1> 
+  		</font>
+      	<br>
+      <a class="ptg" href="events/android_app_development.html" target="_blank">More Details</a>
+    </div>
+  </div>
+</div>
+</div>
+
+</center>
+	<!--
   <ul>
     <li>
       <img alt="Launch" width="50px" height="50px" src="img/list/1.png">
@@ -1168,6 +1394,7 @@ a.ptg:hover::after{
     </li>
     
   </ul>
+-->
 </div>
 
                                             </section>
