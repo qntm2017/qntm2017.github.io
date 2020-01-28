@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Download</title>
+<link href='https://fonts.googleapis.com/css?family=Stylish' rel='stylesheet'>
+</head>
+<body bgcolor="#e6e6fa">
+<center>
+<img src="fclogo.png" width="150px" height="150px">
+<br>
+<FONT COLOR = BROWN><font size="100"> FAKIR CHAND COLLEGE </font></FONT>
+<h1> Students' Admit Card  </h1>
+<label style="font-family: 'Stylish';font-size: 35px;" for="rollno">Enter Roll No.</label>
+
+    <input style="width: 250px; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;" type="text" id="rollno" name="rollno" placeholder="Enter Roll No.">
+<br>
+<button style="width: 200px; background-color: #4CAF50; color: white; padding: 14px 20px; margin: 8px 0; border: none; border-radius: 4px; cursor: pointer;" onclick="downloadadmit()">Download Admit Card</button>
+</center>
+<script type="text/javascript">
+	function downloadadmit()
+	{
+		var roll = document.getElementById("rollno").value;
+  		window.open("admit/" + roll + ".pdf")
+	}
+</script>
+</body>
+</html>
