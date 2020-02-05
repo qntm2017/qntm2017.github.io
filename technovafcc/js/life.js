@@ -32,6 +32,7 @@
     $(document).ready(function() {
         "use strict";
 		
+        /*
         // preload
         $('#preload').css({
             display: 'table'
@@ -53,6 +54,7 @@
             }).fadeIn(2400);
         });
 		
+        */
         // kenburnsy
         $("#kenburnsy-bg").kenburnsy({
             fullscreen: true
@@ -60,7 +62,7 @@
 		
         // countdown setup start
         $("#countdown").countdown({
-            date: "29 February 2020 09:00:00", // countdown target date settings
+            date: "20 February 2020 09:15:00", // countdown target date settings
             format: "on"
         }, function() {
             // callback function
@@ -152,7 +154,7 @@
 
 // GOOGLE ANALYTICS start
 var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-3033286-18']);
+_gaq.push(['_setAccount', 'UA-72523311-2']);
 _gaq.push(['_trackPageview']);
 (function() {
     var ga = document.createElement('script');
